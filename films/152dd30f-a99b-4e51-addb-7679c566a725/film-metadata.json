@@ -1,0 +1,70 @@
+{
+  "FilmStatusBond": 1,
+  "CustomData": {
+    "FilmLength": 82461,
+    "Chunks": [
+      {
+        "Index": 0,
+        "ChunkStartTimeOffsetMilliseconds": 0,
+        "DurationMilliseconds": 12,
+        "ChunkSize": 431215,
+        "FileRelativePath": "/filmChunk0",
+        "ChunkType": 1
+      },
+      {
+        "Index": 1,
+        "ChunkStartTimeOffsetMilliseconds": 0,
+        "DurationMilliseconds": 19994,
+        "ChunkSize": 37608,
+        "FileRelativePath": "/filmChunk1",
+        "ChunkType": 2
+      },
+      {
+        "Index": 2,
+        "ChunkStartTimeOffsetMilliseconds": 19995,
+        "DurationMilliseconds": 20003,
+        "ChunkSize": 48576,
+        "FileRelativePath": "/filmChunk2",
+        "ChunkType": 2
+      },
+      {
+        "Index": 3,
+        "ChunkStartTimeOffsetMilliseconds": 39998,
+        "DurationMilliseconds": 20003,
+        "ChunkSize": 48262,
+        "FileRelativePath": "/filmChunk3",
+        "ChunkType": 2
+      },
+      {
+        "Index": 4,
+        "ChunkStartTimeOffsetMilliseconds": 60002,
+        "DurationMilliseconds": 20002,
+        "ChunkSize": 45848,
+        "FileRelativePath": "/filmChunk4",
+        "ChunkType": 2
+      },
+      {
+        "Index": 5,
+        "ChunkStartTimeOffsetMilliseconds": 80005,
+        "DurationMilliseconds": 2447,
+        "ChunkSize": 17297,
+        "FileRelativePath": "/filmChunk5",
+        "ChunkType": 2
+      },
+      {
+        "Index": 6,
+        "ChunkStartTimeOffsetMilliseconds": 82452,
+        "DurationMilliseconds": 0,
+        "ChunkSize": 28,
+        "FileRelativePath": "/filmChunk6",
+        "ChunkType": 3
+      }
+    ],
+    "HasGameEnded": true,
+    "ManifestRefreshSeconds": 30,
+    "MatchId": "152dd30f-a99b-4e51-addb-7679c566a725",
+    "FilmMajorVersion": 41
+  },
+  "BlobStoragePathPrefix": "https://blobs-infiniteugc.svc.halowaypoint.com/ugcstorage/film/b192fbce-7469-4a3b-89e6-3e71afb0298d/d99fe1b4-ab2e-40e2-baf0-2e181980835a/",
+  "AssetId": "b192fbce-7469-4a3b-89e6-3e71afb0298d"
+}

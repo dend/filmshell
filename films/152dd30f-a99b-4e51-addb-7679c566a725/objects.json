@@ -1,0 +1,5906 @@
+[
+  {
+    "index": 0,
+    "objectId": 1233051095,
+    "name": "Large Vent Hatch B",
+    "position": {
+      "x": 47,
+      "y": 0,
+      "z": 11
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 1,
+    "objectId": 1233051095,
+    "name": "Large Vent Hatch B",
+    "position": {
+      "x": -46.97,
+      "y": 0,
+      "z": 11.05
+    },
+    "forward": {
+      "x": -1,
+      "y": 0
+    },
+    "heading": 180,
+    "category": 1
+  },
+  {
+    "index": 2,
+    "objectId": -614133168,
+    "name": "Projectile Blocker 16x2x8",
+    "position": {
+      "x": 46.2,
+      "y": 0.01,
+      "z": 18.04
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 3,
+    "objectId": -614133168,
+    "name": "Projectile Blocker 16x2x8",
+    "position": {
+      "x": -46.11,
+      "y": 0.01,
+      "z": 18.04
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 4,
+    "objectId": -1976322664,
+    "name": "UNSC Cargo Container Sandy MP",
+    "position": {
+      "x": 71.83,
+      "y": 68.83,
+      "z": 44.33
+    },
+    "forward": {
+      "x": 0.7071,
+      "y": -0.7071
+    },
+    "heading": -45,
+    "category": 1
+  },
+  {
+    "index": 5,
+    "objectId": -1976322664,
+    "name": "UNSC Cargo Container Sandy MP",
+    "position": {
+      "x": 5.51,
+      "y": -114.87,
+      "z": 44
+    },
+    "forward": {
+      "x": -0.9902,
+      "y": -0.1395
+    },
+    "heading": -171.98,
+    "category": 1
+  },
+  {
+    "index": 6,
+    "objectId": -1976322664,
+    "name": "UNSC Cargo Container Sandy MP",
+    "position": {
+      "x": -5,
+      "y": -114,
+      "z": 44
+    },
+    "forward": {
+      "x": -1,
+      "y": 0
+    },
+    "heading": -180,
+    "category": 1
+  },
+  {
+    "index": 7,
+    "objectId": -1976322664,
+    "name": "UNSC Cargo Container Sandy MP",
+    "position": {
+      "x": 5.51,
+      "y": -114.87,
+      "z": 51.95
+    },
+    "forward": {
+      "x": -0.9994,
+      "y": 0.0346
+    },
+    "heading": 178.01,
+    "category": 1
+  },
+  {
+    "index": 8,
+    "objectId": -1976322664,
+    "name": "UNSC Cargo Container Sandy MP",
+    "position": {
+      "x": -5,
+      "y": -114,
+      "z": 51.95
+    },
+    "forward": {
+      "x": -1,
+      "y": 0
+    },
+    "heading": -180,
+    "category": 1
+  },
+  {
+    "index": 9,
+    "objectId": -1976322664,
+    "name": "UNSC Cargo Container Sandy MP",
+    "position": {
+      "x": -73.13,
+      "y": -100.25,
+      "z": 21.97
+    },
+    "forward": {
+      "x": 0.9928,
+      "y": -0.1199
+    },
+    "heading": -6.88,
+    "category": 1
+  },
+  {
+    "index": 10,
+    "objectId": -1976322664,
+    "name": "UNSC Cargo Container Sandy MP",
+    "position": {
+      "x": -73.13,
+      "y": -100.25,
+      "z": 30
+    },
+    "forward": {
+      "x": 0.9999,
+      "y": 0.0148
+    },
+    "heading": 0.85,
+    "category": 1
+  },
+  {
+    "index": 11,
+    "objectId": 1282914177,
+    "name": "Concrete Doorway MP",
+    "position": {
+      "x": 66.67,
+      "y": -104,
+      "z": 10.77
+    },
+    "forward": {
+      "x": 0,
+      "y": -1
+    },
+    "heading": -90,
+    "category": 1
+  },
+  {
+    "index": 12,
+    "objectId": 1282914177,
+    "name": "Concrete Doorway MP",
+    "position": {
+      "x": 66.67,
+      "y": -104,
+      "z": 35.77
+    },
+    "forward": {
+      "x": 0,
+      "y": -1
+    },
+    "heading": -90,
+    "category": 1
+  },
+  {
+    "index": 13,
+    "objectId": 1282914177,
+    "name": "Concrete Doorway MP",
+    "position": {
+      "x": 78.67,
+      "y": -104,
+      "z": 38.77
+    },
+    "forward": {
+      "x": 0,
+      "y": -1
+    },
+    "heading": -90,
+    "category": 1
+  },
+  {
+    "index": 14,
+    "objectId": 1282914177,
+    "name": "Concrete Doorway MP",
+    "position": {
+      "x": 78.67,
+      "y": -104,
+      "z": 13.77
+    },
+    "forward": {
+      "x": 0,
+      "y": -1
+    },
+    "heading": -90,
+    "category": 1
+  },
+  {
+    "index": 15,
+    "objectId": 1282914177,
+    "name": "Concrete Doorway MP",
+    "position": {
+      "x": 107.97,
+      "y": -76,
+      "z": 38.77
+    },
+    "forward": {
+      "x": -1,
+      "y": 0
+    },
+    "heading": 180,
+    "category": 1
+  },
+  {
+    "index": 16,
+    "objectId": 1282914177,
+    "name": "Concrete Doorway MP",
+    "position": {
+      "x": 107.97,
+      "y": -76,
+      "z": 13.77
+    },
+    "forward": {
+      "x": -1,
+      "y": 0
+    },
+    "heading": -180,
+    "category": 1
+  },
+  {
+    "index": 17,
+    "objectId": 1282914177,
+    "name": "Concrete Doorway MP",
+    "position": {
+      "x": 107.97,
+      "y": -65,
+      "z": 38.77
+    },
+    "forward": {
+      "x": -1,
+      "y": 0
+    },
+    "heading": 180,
+    "category": 1
+  },
+  {
+    "index": 18,
+    "objectId": 1282914177,
+    "name": "Concrete Doorway MP",
+    "position": {
+      "x": 107.97,
+      "y": -65,
+      "z": 13.77
+    },
+    "forward": {
+      "x": -1,
+      "y": 0
+    },
+    "heading": -180,
+    "category": 1
+  },
+  {
+    "index": 19,
+    "objectId": 1282914177,
+    "name": "Concrete Doorway MP",
+    "position": {
+      "x": -39.93,
+      "y": -169.11,
+      "z": 52.77
+    },
+    "forward": {
+      "x": -1,
+      "y": 0
+    },
+    "heading": 180,
+    "category": 1
+  },
+  {
+    "index": 20,
+    "objectId": 1282914177,
+    "name": "Concrete Doorway MP",
+    "position": {
+      "x": -39.93,
+      "y": -169.11,
+      "z": 27.34
+    },
+    "forward": {
+      "x": -1,
+      "y": 0
+    },
+    "heading": -180,
+    "category": 1
+  },
+  {
+    "index": 21,
+    "objectId": 1282914177,
+    "name": "Concrete Doorway MP",
+    "position": {
+      "x": -43.48,
+      "y": -153.86,
+      "z": 27.34
+    },
+    "forward": {
+      "x": -0.7071,
+      "y": -0.7071
+    },
+    "heading": -135,
+    "category": 1
+  },
+  {
+    "index": 22,
+    "objectId": 1282914177,
+    "name": "Concrete Doorway MP",
+    "position": {
+      "x": -43.48,
+      "y": -153.86,
+      "z": 52.77
+    },
+    "forward": {
+      "x": -0.7071,
+      "y": -0.7071
+    },
+    "heading": -135,
+    "category": 1
+  },
+  {
+    "index": 23,
+    "objectId": -1976322664,
+    "name": "UNSC Cargo Container Sandy MP",
+    "position": {
+      "x": -73.13,
+      "y": -108.59,
+      "z": 21.97
+    },
+    "forward": {
+      "x": 0.9928,
+      "y": -0.1199
+    },
+    "heading": -6.88,
+    "category": 1
+  },
+  {
+    "index": 24,
+    "objectId": -1976322664,
+    "name": "UNSC Cargo Container Sandy MP",
+    "position": {
+      "x": -73.18,
+      "y": -109.01,
+      "z": 30
+    },
+    "forward": {
+      "x": 0.9935,
+      "y": -0.1135
+    },
+    "heading": -6.51,
+    "category": 1
+  },
+  {
+    "index": 25,
+    "objectId": -1216342560,
+    "name": "UNSC Cargo Container Green MP",
+    "position": {
+      "x": -40.03,
+      "y": 104.68,
+      "z": 22
+    },
+    "forward": {
+      "x": -0.6015,
+      "y": -0.7989
+    },
+    "heading": -126.98,
+    "category": 1
+  },
+  {
+    "index": 26,
+    "objectId": -1976322664,
+    "name": "UNSC Cargo Container Sandy MP",
+    "position": {
+      "x": -40.03,
+      "y": 104.68,
+      "z": 29.95
+    },
+    "forward": {
+      "x": -0.7312,
+      "y": -0.6822
+    },
+    "heading": -136.99,
+    "category": 1
+  },
+  {
+    "index": 27,
+    "objectId": -1216342560,
+    "name": "UNSC Cargo Container Green MP",
+    "position": {
+      "x": -48.08,
+      "y": 97.86,
+      "z": 29.95
+    },
+    "forward": {
+      "x": -0.7071,
+      "y": -0.7071
+    },
+    "heading": -135,
+    "category": 1
+  },
+  {
+    "index": 28,
+    "objectId": -1976322664,
+    "name": "UNSC Cargo Container Sandy MP",
+    "position": {
+      "x": -48.08,
+      "y": 97.86,
+      "z": 22
+    },
+    "forward": {
+      "x": -0.7071,
+      "y": -0.7071
+    },
+    "heading": -135,
+    "category": 1
+  },
+  {
+    "index": 29,
+    "objectId": -1976322664,
+    "name": "UNSC Cargo Container Sandy MP",
+    "position": {
+      "x": -48.08,
+      "y": 97.86,
+      "z": 37.95
+    },
+    "forward": {
+      "x": -0.7071,
+      "y": -0.7071
+    },
+    "heading": -135,
+    "category": 1
+  },
+  {
+    "index": 30,
+    "objectId": -1216342560,
+    "name": "UNSC Cargo Container Green MP",
+    "position": {
+      "x": -40.03,
+      "y": 104.68,
+      "z": 37.95
+    },
+    "forward": {
+      "x": -0.6423,
+      "y": -0.7664
+    },
+    "heading": -129.97,
+    "category": 1
+  },
+  {
+    "index": 31,
+    "objectId": 1980827929,
+    "name": "Map Intro Camera",
+    "position": {
+      "x": 139.98,
+      "y": 98.91,
+      "z": 30.33
+    },
+    "forward": {
+      "x": 0.03,
+      "y": 0.9995
+    },
+    "heading": 88.28,
+    "category": 1
+  },
+  {
+    "index": 32,
+    "objectId": 1980827929,
+    "name": "Map Intro Camera",
+    "position": {
+      "x": 142.81,
+      "y": 103.5,
+      "z": 29.95
+    },
+    "forward": {
+      "x": -0.0132,
+      "y": 0.9995
+    },
+    "heading": 90.76,
+    "category": 1
+  },
+  {
+    "index": 33,
+    "objectId": 1980827929,
+    "name": "Map Intro Camera",
+    "position": {
+      "x": 28.18,
+      "y": -110.41,
+      "z": 56.34
+    },
+    "forward": {
+      "x": 0.8551,
+      "y": 0.5138
+    },
+    "heading": 31,
+    "category": 1
+  },
+  {
+    "index": 34,
+    "objectId": 1980827929,
+    "name": "Map Intro Camera",
+    "position": {
+      "x": 28.18,
+      "y": -110.41,
+      "z": 55.58
+    },
+    "forward": {
+      "x": 0.6944,
+      "y": 0.6331
+    },
+    "heading": 42.35,
+    "category": 1
+  },
+  {
+    "index": 35,
+    "objectId": 1980827929,
+    "name": "Map Intro Camera",
+    "position": {
+      "x": -84.3,
+      "y": 46.08,
+      "z": 16.3
+    },
+    "forward": {
+      "x": -0.7807,
+      "y": 0.6236
+    },
+    "heading": 141.38,
+    "category": 1
+  },
+  {
+    "index": 36,
+    "objectId": 1980827929,
+    "name": "Map Intro Camera",
+    "position": {
+      "x": -94.09,
+      "y": 33.11,
+      "z": 16.55
+    },
+    "forward": {
+      "x": -0.9233,
+      "y": 0.3838
+    },
+    "heading": 157.43,
+    "category": 1
+  },
+  {
+    "index": 37,
+    "objectId": 298581842,
+    "name": "Winning Team Outro",
+    "position": {
+      "x": -1,
+      "y": -62,
+      "z": 27
+    },
+    "forward": {
+      "x": -1,
+      "y": 0
+    },
+    "heading": -180,
+    "category": 1
+  },
+  {
+    "index": 38,
+    "objectId": 1980827929,
+    "name": "Map Intro Camera",
+    "position": {
+      "x": -10.84,
+      "y": 21.7,
+      "z": 64.89
+    },
+    "forward": {
+      "x": -0.9123,
+      "y": -0.3108
+    },
+    "heading": -161.18,
+    "category": 1
+  },
+  {
+    "index": 39,
+    "objectId": -361555940,
+    "name": "Spawn Point [Initial]",
+    "position": {
+      "x": 0,
+      "y": 202,
+      "z": 36
+    },
+    "forward": {
+      "x": -1,
+      "y": 0
+    },
+    "heading": -180,
+    "category": 7
+  },
+  {
+    "index": 40,
+    "objectId": -361555940,
+    "name": "Spawn Point [Initial]",
+    "position": {
+      "x": -145,
+      "y": 129,
+      "z": 30
+    },
+    "forward": {
+      "x": -0.7071,
+      "y": -0.7071
+    },
+    "heading": -135,
+    "category": 7
+  },
+  {
+    "index": 41,
+    "objectId": -361555940,
+    "name": "Spawn Point [Initial]",
+    "position": {
+      "x": 122,
+      "y": 134,
+      "z": 32.9
+    },
+    "forward": {
+      "x": -1,
+      "y": 0
+    },
+    "heading": -180,
+    "category": 7
+  },
+  {
+    "index": 42,
+    "objectId": -361555940,
+    "name": "Spawn Point [Initial]",
+    "position": {
+      "x": 55,
+      "y": 136,
+      "z": 22
+    },
+    "forward": {
+      "x": -0.7071,
+      "y": 0.7071
+    },
+    "heading": 135,
+    "category": 7
+  },
+  {
+    "index": 43,
+    "objectId": -361555940,
+    "name": "Spawn Point [Initial]",
+    "position": {
+      "x": 0,
+      "y": -202,
+      "z": 36
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 7
+  },
+  {
+    "index": 44,
+    "objectId": -361555940,
+    "name": "Spawn Point [Initial]",
+    "position": {
+      "x": -145,
+      "y": -129,
+      "z": 30
+    },
+    "forward": {
+      "x": 0.7071,
+      "y": -0.7071
+    },
+    "heading": -45,
+    "category": 7
+  },
+  {
+    "index": 45,
+    "objectId": -361555940,
+    "name": "Spawn Point [Initial]",
+    "position": {
+      "x": 122,
+      "y": -134,
+      "z": 32.8
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 7
+  },
+  {
+    "index": 46,
+    "objectId": -361555940,
+    "name": "Spawn Point [Initial]",
+    "position": {
+      "x": 55,
+      "y": -136,
+      "z": 22
+    },
+    "forward": {
+      "x": 0.7071,
+      "y": 0.7071
+    },
+    "heading": 45,
+    "category": 7
+  },
+  {
+    "index": 47,
+    "objectId": 1006238451,
+    "name": "Team Intro Arrow Front",
+    "position": {
+      "x": 0,
+      "y": 202.5,
+      "z": 36
+    },
+    "forward": {
+      "x": -1,
+      "y": 0
+    },
+    "heading": -180,
+    "category": 1
+  },
+  {
+    "index": 48,
+    "objectId": 1006238451,
+    "name": "Team Intro Arrow Front",
+    "position": {
+      "x": 0,
+      "y": -202.5,
+      "z": 36
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 49,
+    "objectId": 1006238451,
+    "name": "Team Intro Arrow Front",
+    "position": {
+      "x": 40,
+      "y": 190,
+      "z": 38
+    },
+    "forward": {
+      "x": 0,
+      "y": 1
+    },
+    "heading": 90,
+    "category": 1
+  },
+  {
+    "index": 50,
+    "objectId": 1006238451,
+    "name": "Team Intro Arrow Front",
+    "position": {
+      "x": -43,
+      "y": 190,
+      "z": 38
+    },
+    "forward": {
+      "x": 0,
+      "y": -1
+    },
+    "heading": -90,
+    "category": 1
+  },
+  {
+    "index": 51,
+    "objectId": 1006238451,
+    "name": "Team Intro Arrow Front",
+    "position": {
+      "x": -40,
+      "y": -190,
+      "z": 38
+    },
+    "forward": {
+      "x": 0,
+      "y": -1
+    },
+    "heading": -90,
+    "category": 1
+  },
+  {
+    "index": 52,
+    "objectId": 1006238451,
+    "name": "Team Intro Arrow Front",
+    "position": {
+      "x": 41,
+      "y": -190,
+      "z": 38
+    },
+    "forward": {
+      "x": 0,
+      "y": 1
+    },
+    "heading": 90,
+    "category": 1
+  },
+  {
+    "index": 53,
+    "objectId": -173177076,
+    "name": "Team Intro Line Left",
+    "position": {
+      "x": 0.83,
+      "y": -8.08,
+      "z": 4
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 54,
+    "objectId": 1006238451,
+    "name": "Team Intro Arrow Front",
+    "position": {
+      "x": 0,
+      "y": 202.96,
+      "z": 36
+    },
+    "forward": {
+      "x": -1,
+      "y": 0
+    },
+    "heading": 180,
+    "category": 1
+  },
+  {
+    "index": 55,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": 127.01,
+      "y": 137.82,
+      "z": 33
+    },
+    "forward": {
+      "x": -0.9424,
+      "y": 0.3345
+    },
+    "heading": 160.46,
+    "category": 7
+  },
+  {
+    "index": 56,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": 96.5,
+      "y": 125.04,
+      "z": 24.99
+    },
+    "forward": {
+      "x": -1,
+      "y": 0
+    },
+    "heading": -180,
+    "category": 7
+  },
+  {
+    "index": 57,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": 86.64,
+      "y": 125.33,
+      "z": 24.99
+    },
+    "forward": {
+      "x": -1,
+      "y": 0
+    },
+    "heading": -180,
+    "category": 7
+  },
+  {
+    "index": 58,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": 133.38,
+      "y": 96.74,
+      "z": 25.5
+    },
+    "forward": {
+      "x": 0,
+      "y": 1
+    },
+    "heading": 90,
+    "category": 7
+  },
+  {
+    "index": 59,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": 39.26,
+      "y": -215.07,
+      "z": 38
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 7
+  },
+  {
+    "index": 60,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": -8.31,
+      "y": -229.25,
+      "z": 34
+    },
+    "forward": {
+      "x": 0.9871,
+      "y": 0.1604
+    },
+    "heading": 9.23,
+    "category": 7
+  },
+  {
+    "index": 61,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": -136.85,
+      "y": -139.55,
+      "z": 29.95
+    },
+    "forward": {
+      "x": 0.9064,
+      "y": -0.4225
+    },
+    "heading": -24.99,
+    "category": 7
+  },
+  {
+    "index": 62,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": -147.53,
+      "y": -135.55,
+      "z": 29.98
+    },
+    "forward": {
+      "x": 0.7071,
+      "y": -0.7071
+    },
+    "heading": -45,
+    "category": 7
+  },
+  {
+    "index": 63,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": 127.15,
+      "y": -137.68,
+      "z": 33
+    },
+    "forward": {
+      "x": 0.9211,
+      "y": 0.3894
+    },
+    "heading": 22.92,
+    "category": 7
+  },
+  {
+    "index": 64,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": 97.16,
+      "y": -125.27,
+      "z": 25.02
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 7
+  },
+  {
+    "index": 65,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": 86.28,
+      "y": -125.06,
+      "z": 25.02
+    },
+    "forward": {
+      "x": 0.9648,
+      "y": -0.2629
+    },
+    "heading": -15.24,
+    "category": 7
+  },
+  {
+    "index": 66,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": 62.01,
+      "y": -135.85,
+      "z": 22.11
+    },
+    "forward": {
+      "x": 0.6088,
+      "y": 0.7934
+    },
+    "heading": 52.5,
+    "category": 7
+  },
+  {
+    "index": 67,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": 123.31,
+      "y": -141.58,
+      "z": 33
+    },
+    "forward": {
+      "x": 0.9166,
+      "y": 0.3997
+    },
+    "heading": 23.56,
+    "category": 7
+  },
+  {
+    "index": 68,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": -142.51,
+      "y": -79.46,
+      "z": 27.09
+    },
+    "forward": {
+      "x": 0.0314,
+      "y": -0.9995
+    },
+    "heading": -88.2,
+    "category": 7
+  },
+  {
+    "index": 69,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": 113.15,
+      "y": -143.09,
+      "z": 33
+    },
+    "forward": {
+      "x": 0.9669,
+      "y": 0.2553
+    },
+    "heading": 14.79,
+    "category": 7
+  },
+  {
+    "index": 70,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": 118.42,
+      "y": -143.08,
+      "z": 33
+    },
+    "forward": {
+      "x": 0.9612,
+      "y": 0.2757
+    },
+    "heading": 16,
+    "category": 7
+  },
+  {
+    "index": 71,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": 133.61,
+      "y": -96.57,
+      "z": 25.42
+    },
+    "forward": {
+      "x": 0,
+      "y": 1
+    },
+    "heading": 90,
+    "category": 7
+  },
+  {
+    "index": 72,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": -131.14,
+      "y": -19.57,
+      "z": 11
+    },
+    "forward": {
+      "x": 0,
+      "y": -1
+    },
+    "heading": -90,
+    "category": 7
+  },
+  {
+    "index": 73,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": -131.16,
+      "y": -28.73,
+      "z": 11
+    },
+    "forward": {
+      "x": 0,
+      "y": -1
+    },
+    "heading": -90,
+    "category": 7
+  },
+  {
+    "index": 74,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": 148.02,
+      "y": -5.86,
+      "z": 31.4
+    },
+    "forward": {
+      "x": 0.2408,
+      "y": 0.9706
+    },
+    "heading": 76.07,
+    "category": 7
+  },
+  {
+    "index": 75,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": 8.32,
+      "y": -229.24,
+      "z": 34
+    },
+    "forward": {
+      "x": 0.9876,
+      "y": -0.1568
+    },
+    "heading": -9.02,
+    "category": 7
+  },
+  {
+    "index": 76,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": 41.46,
+      "y": 215.72,
+      "z": 38
+    },
+    "forward": {
+      "x": -1,
+      "y": 0
+    },
+    "heading": -180,
+    "category": 7
+  },
+  {
+    "index": 77,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": -8.29,
+      "y": 228.83,
+      "z": 34.01
+    },
+    "forward": {
+      "x": -0.9747,
+      "y": 0.2236
+    },
+    "heading": 167.08,
+    "category": 7
+  },
+  {
+    "index": 78,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": 61.77,
+      "y": 136.58,
+      "z": 22.2
+    },
+    "forward": {
+      "x": -0.5815,
+      "y": 0.8135
+    },
+    "heading": 125.56,
+    "category": 7
+  },
+  {
+    "index": 79,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": 2.22,
+      "y": 230.01,
+      "z": 34
+    },
+    "forward": {
+      "x": -0.9106,
+      "y": -0.4134
+    },
+    "heading": -155.58,
+    "category": 7
+  },
+  {
+    "index": 80,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": -2.8,
+      "y": 230,
+      "z": 34
+    },
+    "forward": {
+      "x": -0.9285,
+      "y": 0.3713
+    },
+    "heading": 158.2,
+    "category": 7
+  },
+  {
+    "index": 81,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": 8.13,
+      "y": 229.11,
+      "z": 34.01
+    },
+    "forward": {
+      "x": -0.9731,
+      "y": -0.2304
+    },
+    "heading": -166.68,
+    "category": 7
+  },
+  {
+    "index": 82,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": -143.33,
+      "y": -139.23,
+      "z": 30.05
+    },
+    "forward": {
+      "x": 0.8247,
+      "y": -0.5655
+    },
+    "heading": -34.44,
+    "category": 7
+  },
+  {
+    "index": 83,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": -142.59,
+      "y": 84.36,
+      "z": 27.04
+    },
+    "forward": {
+      "x": -0.0017,
+      "y": -1
+    },
+    "heading": -90.1,
+    "category": 7
+  },
+  {
+    "index": 84,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": -136.69,
+      "y": 139.32,
+      "z": 29.95
+    },
+    "forward": {
+      "x": -0.9032,
+      "y": -0.4292
+    },
+    "heading": -154.58,
+    "category": 7
+  },
+  {
+    "index": 85,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": -155.36,
+      "y": 127.31,
+      "z": 29.95
+    },
+    "forward": {
+      "x": -0.5314,
+      "y": -0.8471
+    },
+    "heading": -122.1,
+    "category": 7
+  },
+  {
+    "index": 86,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": -53.73,
+      "y": 209.7,
+      "z": 38
+    },
+    "forward": {
+      "x": -0.7234,
+      "y": -0.6904
+    },
+    "heading": -136.34,
+    "category": 7
+  },
+  {
+    "index": 87,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": -147.78,
+      "y": 135.25,
+      "z": 29.95
+    },
+    "forward": {
+      "x": -0.7071,
+      "y": -0.7071
+    },
+    "heading": -135,
+    "category": 7
+  },
+  {
+    "index": 88,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": -50.91,
+      "y": 214.35,
+      "z": 38
+    },
+    "forward": {
+      "x": -0.9013,
+      "y": -0.4332
+    },
+    "heading": -154.33,
+    "category": 7
+  },
+  {
+    "index": 89,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": -13.27,
+      "y": 224.16,
+      "z": 34
+    },
+    "forward": {
+      "x": -1,
+      "y": 0
+    },
+    "heading": -180,
+    "category": 7
+  },
+  {
+    "index": 90,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": 13.25,
+      "y": 224.17,
+      "z": 34
+    },
+    "forward": {
+      "x": -1,
+      "y": 0
+    },
+    "heading": 180,
+    "category": 7
+  },
+  {
+    "index": 91,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": 44.53,
+      "y": -215.04,
+      "z": 38
+    },
+    "forward": {
+      "x": 0.9999,
+      "y": -0.0116
+    },
+    "heading": -0.67,
+    "category": 7
+  },
+  {
+    "index": 92,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": -2.6,
+      "y": -230.65,
+      "z": 34
+    },
+    "forward": {
+      "x": 0.9405,
+      "y": 0.3398
+    },
+    "heading": 19.86,
+    "category": 7
+  },
+  {
+    "index": 93,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": 2.32,
+      "y": -230.68,
+      "z": 34
+    },
+    "forward": {
+      "x": 0.937,
+      "y": -0.3493
+    },
+    "heading": -20.44,
+    "category": 7
+  },
+  {
+    "index": 94,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": -50.97,
+      "y": -215.05,
+      "z": 38
+    },
+    "forward": {
+      "x": 0.9147,
+      "y": -0.4042
+    },
+    "heading": -23.84,
+    "category": 7
+  },
+  {
+    "index": 95,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": -39.75,
+      "y": -215,
+      "z": 38
+    },
+    "forward": {
+      "x": 1,
+      "y": -0.0005
+    },
+    "heading": -0.03,
+    "category": 7
+  },
+  {
+    "index": 96,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": -13.16,
+      "y": -224.47,
+      "z": 34
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 7
+  },
+  {
+    "index": 97,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": 13.23,
+      "y": -224.58,
+      "z": 34
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 7
+  },
+  {
+    "index": 98,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": 133.25,
+      "y": 107.54,
+      "z": 25.5
+    },
+    "forward": {
+      "x": -0.4222,
+      "y": 0.9065
+    },
+    "heading": 114.97,
+    "category": 7
+  },
+  {
+    "index": 99,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": 133.69,
+      "y": -107.81,
+      "z": 25.5
+    },
+    "forward": {
+      "x": 0.4498,
+      "y": 0.8931
+    },
+    "heading": 63.27,
+    "category": 7
+  },
+  {
+    "index": 100,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": 47.13,
+      "y": 215.83,
+      "z": 38
+    },
+    "forward": {
+      "x": -0.9879,
+      "y": 0.155
+    },
+    "heading": 171.08,
+    "category": 7
+  },
+  {
+    "index": 101,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": 61.68,
+      "y": -141.57,
+      "z": 22.17
+    },
+    "forward": {
+      "x": 0.7085,
+      "y": 0.7057
+    },
+    "heading": 44.89,
+    "category": 7
+  },
+  {
+    "index": 102,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": -141.53,
+      "y": -74.22,
+      "z": 27.09
+    },
+    "forward": {
+      "x": -0.2353,
+      "y": -0.9719
+    },
+    "heading": -103.61,
+    "category": 7
+  },
+  {
+    "index": 103,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": -155.81,
+      "y": -127.32,
+      "z": 29.95
+    },
+    "forward": {
+      "x": 0.486,
+      "y": -0.874
+    },
+    "heading": -60.92,
+    "category": 7
+  },
+  {
+    "index": 104,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": -141.53,
+      "y": 74.59,
+      "z": 27.04
+    },
+    "forward": {
+      "x": 0.1996,
+      "y": -0.9799
+    },
+    "heading": -78.48,
+    "category": 7
+  },
+  {
+    "index": 105,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": -142.89,
+      "y": 138.97,
+      "z": 29.95
+    },
+    "forward": {
+      "x": -0.8626,
+      "y": -0.5059
+    },
+    "heading": -149.61,
+    "category": 7
+  },
+  {
+    "index": 106,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": 62.27,
+      "y": 141.82,
+      "z": 22.2
+    },
+    "forward": {
+      "x": -0.7133,
+      "y": 0.7009
+    },
+    "heading": 135.5,
+    "category": 7
+  },
+  {
+    "index": 107,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": 52.52,
+      "y": 214.16,
+      "z": 38
+    },
+    "forward": {
+      "x": -0.8914,
+      "y": 0.4532
+    },
+    "heading": 153.05,
+    "category": 7
+  },
+  {
+    "index": 108,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": 53.74,
+      "y": 208.32,
+      "z": 38
+    },
+    "forward": {
+      "x": -0.9098,
+      "y": 0.415
+    },
+    "heading": 155.48,
+    "category": 7
+  },
+  {
+    "index": 109,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": -45.04,
+      "y": 214.74,
+      "z": 38
+    },
+    "forward": {
+      "x": -0.99,
+      "y": -0.141
+    },
+    "heading": -171.89,
+    "category": 7
+  },
+  {
+    "index": 110,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": -39.58,
+      "y": 214.83,
+      "z": 38
+    },
+    "forward": {
+      "x": -1,
+      "y": 0
+    },
+    "heading": -180,
+    "category": 7
+  },
+  {
+    "index": 111,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": -53.95,
+      "y": -210.74,
+      "z": 38
+    },
+    "forward": {
+      "x": 0.614,
+      "y": -0.7893
+    },
+    "heading": -52.12,
+    "category": 7
+  },
+  {
+    "index": 112,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": -54.11,
+      "y": -205.43,
+      "z": 38
+    },
+    "forward": {
+      "x": 0.5423,
+      "y": -0.8402
+    },
+    "heading": -57.16,
+    "category": 7
+  },
+  {
+    "index": 113,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": 50.88,
+      "y": -214.91,
+      "z": 38
+    },
+    "forward": {
+      "x": 0.8985,
+      "y": 0.4389
+    },
+    "heading": 26.03,
+    "category": 7
+  },
+  {
+    "index": 114,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": 53.78,
+      "y": -209.41,
+      "z": 38
+    },
+    "forward": {
+      "x": 0.8532,
+      "y": 0.5215
+    },
+    "heading": 31.43,
+    "category": 7
+  },
+  {
+    "index": 115,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": -131.05,
+      "y": 28.7,
+      "z": 11
+    },
+    "forward": {
+      "x": 0,
+      "y": -1
+    },
+    "heading": -90,
+    "category": 7
+  },
+  {
+    "index": 116,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": -131.07,
+      "y": 19.39,
+      "z": 11
+    },
+    "forward": {
+      "x": 0,
+      "y": -1
+    },
+    "heading": -90,
+    "category": 7
+  },
+  {
+    "index": 117,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": -151.4,
+      "y": 131.63,
+      "z": 29.95
+    },
+    "forward": {
+      "x": -0.7071,
+      "y": -0.7071
+    },
+    "heading": -135,
+    "category": 7
+  },
+  {
+    "index": 118,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": -155.29,
+      "y": 120.91,
+      "z": 29.95
+    },
+    "forward": {
+      "x": -0.473,
+      "y": -0.881
+    },
+    "heading": -118.23,
+    "category": 7
+  },
+  {
+    "index": 119,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": -142.6,
+      "y": 79.71,
+      "z": 27.04
+    },
+    "forward": {
+      "x": -0.0017,
+      "y": -1
+    },
+    "heading": -90.1,
+    "category": 7
+  },
+  {
+    "index": 120,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": -142.51,
+      "y": -84.13,
+      "z": 27.09
+    },
+    "forward": {
+      "x": 0.0314,
+      "y": -0.9995
+    },
+    "heading": -88.2,
+    "category": 7
+  },
+  {
+    "index": 121,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": -151.37,
+      "y": -131.69,
+      "z": 29.97
+    },
+    "forward": {
+      "x": 0.7071,
+      "y": -0.7071
+    },
+    "heading": -45,
+    "category": 7
+  },
+  {
+    "index": 122,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": -155.88,
+      "y": -121.05,
+      "z": 29.95
+    },
+    "forward": {
+      "x": 0.3097,
+      "y": -0.9508
+    },
+    "heading": -71.96,
+    "category": 7
+  },
+  {
+    "index": 123,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": -45.15,
+      "y": -215.06,
+      "z": 38
+    },
+    "forward": {
+      "x": 0.9933,
+      "y": -0.1158
+    },
+    "heading": -6.65,
+    "category": 7
+  },
+  {
+    "index": 124,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": 56.28,
+      "y": -142.08,
+      "z": 22.11
+    },
+    "forward": {
+      "x": 0.6592,
+      "y": 0.752
+    },
+    "heading": 48.76,
+    "category": 7
+  },
+  {
+    "index": 125,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": -54.1,
+      "y": -200.4,
+      "z": 38
+    },
+    "forward": {
+      "x": 0.5423,
+      "y": -0.8402
+    },
+    "heading": -57.16,
+    "category": 7
+  },
+  {
+    "index": 126,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": -54.16,
+      "y": -195.12,
+      "z": 38
+    },
+    "forward": {
+      "x": 0.3358,
+      "y": -0.9419
+    },
+    "heading": -70.38,
+    "category": 7
+  },
+  {
+    "index": 127,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": -53.93,
+      "y": 204.39,
+      "z": 38
+    },
+    "forward": {
+      "x": -0.6181,
+      "y": -0.7861
+    },
+    "heading": -128.18,
+    "category": 7
+  },
+  {
+    "index": 128,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": -54.22,
+      "y": 199.17,
+      "z": 38
+    },
+    "forward": {
+      "x": -0.4563,
+      "y": -0.8898
+    },
+    "heading": -117.15,
+    "category": 7
+  },
+  {
+    "index": 129,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": -54.17,
+      "y": 193.95,
+      "z": 38
+    },
+    "forward": {
+      "x": -0.4429,
+      "y": -0.8966
+    },
+    "heading": -116.29,
+    "category": 7
+  },
+  {
+    "index": 130,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": 56.79,
+      "y": 142.07,
+      "z": 22.2
+    },
+    "forward": {
+      "x": -0.6874,
+      "y": 0.7263
+    },
+    "heading": 133.42,
+    "category": 7
+  },
+  {
+    "index": 131,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": 91.62,
+      "y": 125.34,
+      "z": 24.99
+    },
+    "forward": {
+      "x": -1,
+      "y": 0
+    },
+    "heading": -180,
+    "category": 7
+  },
+  {
+    "index": 132,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": 123.16,
+      "y": 141.68,
+      "z": 33
+    },
+    "forward": {
+      "x": -0.9424,
+      "y": 0.3345
+    },
+    "heading": 160.46,
+    "category": 7
+  },
+  {
+    "index": 133,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": 117.99,
+      "y": 142.9,
+      "z": 33
+    },
+    "forward": {
+      "x": -0.9424,
+      "y": 0.3345
+    },
+    "heading": 160.46,
+    "category": 7
+  },
+  {
+    "index": 134,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": 112.96,
+      "y": 142.78,
+      "z": 33
+    },
+    "forward": {
+      "x": -0.9424,
+      "y": 0.3345
+    },
+    "heading": 160.46,
+    "category": 7
+  },
+  {
+    "index": 135,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": 91.79,
+      "y": -125.19,
+      "z": 25.02
+    },
+    "forward": {
+      "x": 0.9948,
+      "y": -0.1015
+    },
+    "heading": -5.83,
+    "category": 7
+  },
+  {
+    "index": 136,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": -131.07,
+      "y": 24.03,
+      "z": 11
+    },
+    "forward": {
+      "x": 0,
+      "y": -1
+    },
+    "heading": -90,
+    "category": 7
+  },
+  {
+    "index": 137,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": -131.16,
+      "y": -24.11,
+      "z": 11
+    },
+    "forward": {
+      "x": 0,
+      "y": -1
+    },
+    "heading": -90,
+    "category": 7
+  },
+  {
+    "index": 138,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": 148.15,
+      "y": 0.02,
+      "z": 31.4
+    },
+    "forward": {
+      "x": 0,
+      "y": 1
+    },
+    "heading": 90,
+    "category": 7
+  },
+  {
+    "index": 139,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": 147.94,
+      "y": 5.89,
+      "z": 31.4
+    },
+    "forward": {
+      "x": -0.2299,
+      "y": 0.9732
+    },
+    "heading": 103.29,
+    "category": 7
+  },
+  {
+    "index": 140,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": 117.81,
+      "y": -58.01,
+      "z": 25
+    },
+    "forward": {
+      "x": 0.8809,
+      "y": 0.4733
+    },
+    "heading": 28.25,
+    "category": 7
+  },
+  {
+    "index": 141,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": 97.9,
+      "y": -58.11,
+      "z": 25
+    },
+    "forward": {
+      "x": 0.9454,
+      "y": -0.3259
+    },
+    "heading": -19.02,
+    "category": 7
+  },
+  {
+    "index": 142,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": 98.01,
+      "y": 58.04,
+      "z": 25
+    },
+    "forward": {
+      "x": -0.963,
+      "y": -0.2693
+    },
+    "heading": -164.38,
+    "category": 7
+  },
+  {
+    "index": 143,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": 117.93,
+      "y": 58.11,
+      "z": 25
+    },
+    "forward": {
+      "x": -0.9402,
+      "y": 0.3407
+    },
+    "heading": 160.08,
+    "category": 7
+  },
+  {
+    "index": 144,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": 112.82,
+      "y": 12.48,
+      "z": 14
+    },
+    "forward": {
+      "x": 0,
+      "y": 1
+    },
+    "heading": 90,
+    "category": 7
+  },
+  {
+    "index": 145,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": 112.82,
+      "y": 7.35,
+      "z": 14
+    },
+    "forward": {
+      "x": 0,
+      "y": 1
+    },
+    "heading": 90,
+    "category": 7
+  },
+  {
+    "index": 146,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": 112.74,
+      "y": -12.68,
+      "z": 14
+    },
+    "forward": {
+      "x": 0,
+      "y": 1
+    },
+    "heading": 90,
+    "category": 7
+  },
+  {
+    "index": 147,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": 112.74,
+      "y": -7.8,
+      "z": 14
+    },
+    "forward": {
+      "x": 0,
+      "y": 1
+    },
+    "heading": 90,
+    "category": 7
+  },
+  {
+    "index": 148,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": -26.94,
+      "y": -157.62,
+      "z": 44.07
+    },
+    "forward": {
+      "x": 0.8589,
+      "y": -0.5122
+    },
+    "heading": -30.81,
+    "category": 7
+  },
+  {
+    "index": 149,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": -22.03,
+      "y": -157.98,
+      "z": 44.07
+    },
+    "forward": {
+      "x": 0.8589,
+      "y": -0.5122
+    },
+    "heading": -30.81,
+    "category": 7
+  },
+  {
+    "index": 150,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": 23.73,
+      "y": -155.5,
+      "z": 44.08
+    },
+    "forward": {
+      "x": 0.9461,
+      "y": 0.3238
+    },
+    "heading": 18.89,
+    "category": 7
+  },
+  {
+    "index": 151,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": 18.94,
+      "y": -155.63,
+      "z": 44.08
+    },
+    "forward": {
+      "x": 0.9506,
+      "y": 0.3103
+    },
+    "heading": 18.08,
+    "category": 7
+  },
+  {
+    "index": 152,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": -51.56,
+      "y": -131.05,
+      "z": 22
+    },
+    "forward": {
+      "x": 0.8745,
+      "y": -0.485
+    },
+    "heading": -29.01,
+    "category": 7
+  },
+  {
+    "index": 153,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": -55.45,
+      "y": -127.66,
+      "z": 22
+    },
+    "forward": {
+      "x": 0.8745,
+      "y": -0.485
+    },
+    "heading": -29.01,
+    "category": 7
+  },
+  {
+    "index": 154,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": -27,
+      "y": 158.05,
+      "z": 44.14
+    },
+    "forward": {
+      "x": -0.8703,
+      "y": -0.4925
+    },
+    "heading": -150.49,
+    "category": 7
+  },
+  {
+    "index": 155,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": -22.23,
+      "y": 158.2,
+      "z": 44.14
+    },
+    "forward": {
+      "x": -0.8703,
+      "y": -0.4925
+    },
+    "heading": -150.49,
+    "category": 7
+  },
+  {
+    "index": 156,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": 24.23,
+      "y": 157.28,
+      "z": 44.12
+    },
+    "forward": {
+      "x": -0.9439,
+      "y": 0.3303
+    },
+    "heading": 160.71,
+    "category": 7
+  },
+  {
+    "index": 157,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": 19.29,
+      "y": 157.34,
+      "z": 44.12
+    },
+    "forward": {
+      "x": -0.9439,
+      "y": 0.3303
+    },
+    "heading": 160.71,
+    "category": 7
+  },
+  {
+    "index": 158,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": -51.65,
+      "y": 131.4,
+      "z": 22
+    },
+    "forward": {
+      "x": -0.8521,
+      "y": -0.5233
+    },
+    "heading": -148.44,
+    "category": 7
+  },
+  {
+    "index": 159,
+    "objectId": -1533673853,
+    "name": "Spawn Point [Respawn]",
+    "position": {
+      "x": -55.35,
+      "y": 127.93,
+      "z": 22
+    },
+    "forward": {
+      "x": -0.8521,
+      "y": -0.5233
+    },
+    "heading": -148.44,
+    "category": 7
+  },
+  {
+    "index": 160,
+    "objectId": 1649659840,
+    "name": "Weapon Rack",
+    "position": {
+      "x": 90.81,
+      "y": 86.81,
+      "z": 30.19
+    },
+    "forward": {
+      "x": 0.7069,
+      "y": -0.7073
+    },
+    "heading": -45.02,
+    "category": 1
+  },
+  {
+    "index": 161,
+    "objectId": 1649659840,
+    "name": "Weapon Rack",
+    "position": {
+      "x": 90.68,
+      "y": -86.93,
+      "z": 30.09
+    },
+    "forward": {
+      "x": -0.7071,
+      "y": -0.7071
+    },
+    "heading": -135,
+    "category": 1
+  },
+  {
+    "index": 162,
+    "objectId": -1376852264,
+    "name": "Grenade Dispenser",
+    "position": {
+      "x": -110.05,
+      "y": 0,
+      "z": 44.14
+    },
+    "forward": {
+      "x": 0,
+      "y": -1
+    },
+    "heading": -90,
+    "category": 1
+  },
+  {
+    "index": 163,
+    "objectId": -1376852264,
+    "name": "Grenade Dispenser",
+    "position": {
+      "x": 134.66,
+      "y": 0.06,
+      "z": 29.5
+    },
+    "forward": {
+      "x": 0,
+      "y": 1
+    },
+    "heading": 90,
+    "category": 1
+  },
+  {
+    "index": 164,
+    "objectId": -467576609,
+    "name": "Equipment Dispenser",
+    "position": {
+      "x": 0,
+      "y": -87.52,
+      "z": 23.75
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 165,
+    "objectId": 1585893648,
+    "name": "Power Equipment Pad",
+    "position": {
+      "x": -0.01,
+      "y": 0,
+      "z": 47.3
+    },
+    "forward": {
+      "x": 0,
+      "y": 1
+    },
+    "heading": 90,
+    "category": 1
+  },
+  {
+    "index": 166,
+    "objectId": 1649659840,
+    "name": "Weapon Rack",
+    "position": {
+      "x": 0.05,
+      "y": -176.23,
+      "z": 41.31
+    },
+    "forward": {
+      "x": -1,
+      "y": 0
+    },
+    "heading": 180,
+    "category": 1
+  },
+  {
+    "index": 167,
+    "objectId": 1649659840,
+    "name": "Weapon Rack",
+    "position": {
+      "x": 0.02,
+      "y": 176.23,
+      "z": 41.36
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 168,
+    "objectId": -467576609,
+    "name": "Equipment Dispenser",
+    "position": {
+      "x": 0,
+      "y": 87.47,
+      "z": 23.77
+    },
+    "forward": {
+      "x": -1,
+      "y": 0
+    },
+    "heading": -180,
+    "category": 1
+  },
+  {
+    "index": 169,
+    "objectId": 1649659840,
+    "name": "Weapon Rack",
+    "position": {
+      "x": 115.18,
+      "y": -0.01,
+      "z": 19.17
+    },
+    "forward": {
+      "x": 0,
+      "y": 1
+    },
+    "heading": 90,
+    "category": 1
+  },
+  {
+    "index": 170,
+    "objectId": 1649659840,
+    "name": "Weapon Rack",
+    "position": {
+      "x": -136.98,
+      "y": 72.06,
+      "z": 32.35
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 171,
+    "objectId": 1649659840,
+    "name": "Weapon Rack",
+    "position": {
+      "x": -136.98,
+      "y": -72.02,
+      "z": 32.35
+    },
+    "forward": {
+      "x": -1,
+      "y": 0
+    },
+    "heading": 180,
+    "category": 1
+  },
+  {
+    "index": 172,
+    "objectId": 1649659840,
+    "name": "Weapon Rack",
+    "position": {
+      "x": 115.18,
+      "y": -0.01,
+      "z": 19.17
+    },
+    "forward": {
+      "x": 0,
+      "y": 1
+    },
+    "heading": 90,
+    "category": 1
+  },
+  {
+    "index": 173,
+    "objectId": 1598006887,
+    "name": "Weapon Trunk",
+    "position": {
+      "x": 3.37,
+      "y": 13.16,
+      "z": 4
+    },
+    "forward": {
+      "x": -1,
+      "y": 0
+    },
+    "heading": -180,
+    "category": 1
+  },
+  {
+    "index": 174,
+    "objectId": 215286960,
+    "name": "Classic Weapon Spawn",
+    "position": {
+      "x": -15,
+      "y": -121,
+      "z": 44.23
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 175,
+    "objectId": 215286960,
+    "name": "Classic Weapon Spawn",
+    "position": {
+      "x": -136,
+      "y": -125,
+      "z": 30.87
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 176,
+    "objectId": 215286960,
+    "name": "Classic Weapon Spawn",
+    "position": {
+      "x": -129.75,
+      "y": 130.81,
+      "z": 30.74
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 177,
+    "objectId": 215286960,
+    "name": "Classic Weapon Spawn",
+    "position": {
+      "x": 2,
+      "y": 182,
+      "z": 37.07
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 178,
+    "objectId": 215286960,
+    "name": "Classic Weapon Spawn",
+    "position": {
+      "x": -13,
+      "y": 11,
+      "z": 47.83
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 179,
+    "objectId": 215286960,
+    "name": "Classic Weapon Spawn",
+    "position": {
+      "x": 106,
+      "y": -57,
+      "z": 25.5
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 180,
+    "objectId": -1361077008,
+    "name": "Classic Equipment Spawn",
+    "position": {
+      "x": 78.28,
+      "y": 81.5,
+      "z": 46
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 181,
+    "objectId": -1361077008,
+    "name": "Classic Equipment Spawn",
+    "position": {
+      "x": -19.79,
+      "y": 4.18,
+      "z": 47.37
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 182,
+    "objectId": -1361077008,
+    "name": "Classic Equipment Spawn",
+    "position": {
+      "x": -6,
+      "y": 12,
+      "z": 4
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 183,
+    "objectId": -1361077008,
+    "name": "Classic Equipment Spawn",
+    "position": {
+      "x": 13.02,
+      "y": -220.62,
+      "z": 34.54
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 184,
+    "objectId": 215286960,
+    "name": "Classic Weapon Spawn",
+    "position": {
+      "x": 7.12,
+      "y": 2.71,
+      "z": 24.07
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 185,
+    "objectId": 215286960,
+    "name": "Classic Weapon Spawn",
+    "position": {
+      "x": 10.28,
+      "y": -6.64,
+      "z": 23.86
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 186,
+    "objectId": -118718946,
+    "name": "Classic Grenade Spawn",
+    "position": {
+      "x": -132.48,
+      "y": 131.39,
+      "z": 30.86
+    },
+    "forward": {
+      "x": 0,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 187,
+    "objectId": 215286960,
+    "name": "Classic Weapon Spawn",
+    "position": {
+      "x": 119,
+      "y": -88,
+      "z": 25.77
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 188,
+    "objectId": 1649659840,
+    "name": "Weapon Rack",
+    "position": {
+      "x": -136.84,
+      "y": -72.02,
+      "z": 32.35
+    },
+    "forward": {
+      "x": -1,
+      "y": 0
+    },
+    "heading": 180,
+    "category": 1
+  },
+  {
+    "index": 189,
+    "objectId": 1649659840,
+    "name": "Weapon Rack",
+    "position": {
+      "x": -136.83,
+      "y": 72.06,
+      "z": 32.35
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 190,
+    "objectId": 215286960,
+    "name": "Classic Weapon Spawn",
+    "position": {
+      "x": -42.87,
+      "y": 84.8,
+      "z": 22.19
+    },
+    "forward": {
+      "x": 0.1626,
+      "y": 0.9867
+    },
+    "heading": 80.64,
+    "category": 1
+  },
+  {
+    "index": 191,
+    "objectId": 215286960,
+    "name": "Classic Weapon Spawn",
+    "position": {
+      "x": 73,
+      "y": -2,
+      "z": 11.02
+    },
+    "forward": {
+      "x": -0.4451,
+      "y": -0.8955
+    },
+    "heading": -116.43,
+    "category": 1
+  },
+  {
+    "index": 192,
+    "objectId": 215286960,
+    "name": "Classic Weapon Spawn",
+    "position": {
+      "x": 73,
+      "y": 5,
+      "z": 11.4
+    },
+    "forward": {
+      "x": -0.4451,
+      "y": -0.8955
+    },
+    "heading": -116.43,
+    "category": 1
+  },
+  {
+    "index": 193,
+    "objectId": 95146865,
+    "name": "Spawn Volume [Respawn]",
+    "position": {
+      "x": 0,
+      "y": -144,
+      "z": 43
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 8
+  },
+  {
+    "index": 194,
+    "objectId": 95146865,
+    "name": "Spawn Volume [Respawn]",
+    "position": {
+      "x": 0,
+      "y": 144,
+      "z": 44
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 8
+  },
+  {
+    "index": 195,
+    "objectId": -1430101324,
+    "name": "Flag Spawn",
+    "position": {
+      "x": -0.24,
+      "y": 0.22,
+      "z": 21.96
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 196,
+    "objectId": -508752201,
+    "name": "Flag Delivery Plate",
+    "position": {
+      "x": 0.07,
+      "y": -125.05,
+      "z": 43.89
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 197,
+    "objectId": -1430101324,
+    "name": "Flag Spawn",
+    "position": {
+      "x": 0.08,
+      "y": -125.04,
+      "z": 43.89
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 198,
+    "objectId": -1430101324,
+    "name": "Flag Spawn",
+    "position": {
+      "x": 0.03,
+      "y": 125.02,
+      "z": 43.9
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 199,
+    "objectId": -508752201,
+    "name": "Flag Delivery Plate",
+    "position": {
+      "x": 0,
+      "y": 125.07,
+      "z": 43.9
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 200,
+    "objectId": 95146865,
+    "name": "Spawn Volume [Respawn]",
+    "position": {
+      "x": -1.82,
+      "y": 176.24,
+      "z": 49
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 8
+  },
+  {
+    "index": 201,
+    "objectId": 95146865,
+    "name": "Spawn Volume [Respawn]",
+    "position": {
+      "x": -1.82,
+      "y": -176.76,
+      "z": 49
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 8
+  },
+  {
+    "index": 202,
+    "objectId": -877512201,
+    "name": "Zone Capture Plate",
+    "position": {
+      "x": 6.6,
+      "y": 0.08,
+      "z": 47.25
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 203,
+    "objectId": -877512201,
+    "name": "Zone Capture Plate",
+    "position": {
+      "x": 93.13,
+      "y": 0.09,
+      "z": 13.7
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 204,
+    "objectId": -877512201,
+    "name": "Zone Capture Plate",
+    "position": {
+      "x": -70.04,
+      "y": 0.09,
+      "z": 10.96
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 205,
+    "objectId": -877512201,
+    "name": "Zone Capture Plate",
+    "position": {
+      "x": 0,
+      "y": -136.21,
+      "z": 43.89
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 206,
+    "objectId": -877512201,
+    "name": "Zone Capture Plate",
+    "position": {
+      "x": -6.42,
+      "y": 0.08,
+      "z": 47.27
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 207,
+    "objectId": -877512201,
+    "name": "Zone Capture Plate",
+    "position": {
+      "x": 0,
+      "y": 136.4,
+      "z": 43.88
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 208,
+    "objectId": -877512201,
+    "name": "Zone Capture Plate",
+    "position": {
+      "x": -102.05,
+      "y": 0.02,
+      "z": 44.14
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 209,
+    "objectId": -877512201,
+    "name": "Zone Capture Plate",
+    "position": {
+      "x": 98,
+      "y": 0.09,
+      "z": 13.68
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 210,
+    "objectId": -877512201,
+    "name": "Zone Capture Plate",
+    "position": {
+      "x": 0.01,
+      "y": -6.5,
+      "z": 47.31
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 211,
+    "objectId": -877512201,
+    "name": "Zone Capture Plate",
+    "position": {
+      "x": -0.02,
+      "y": -133.26,
+      "z": 43.88
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 212,
+    "objectId": -877512201,
+    "name": "Zone Capture Plate",
+    "position": {
+      "x": 108,
+      "y": -104.41,
+      "z": 24.98
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 213,
+    "objectId": -877512201,
+    "name": "Zone Capture Plate",
+    "position": {
+      "x": -114.27,
+      "y": -98.47,
+      "z": 40.15
+    },
+    "forward": {
+      "x": 0.7071,
+      "y": 0.7071
+    },
+    "heading": 45,
+    "category": 1
+  },
+  {
+    "index": 214,
+    "objectId": -877512201,
+    "name": "Zone Capture Plate",
+    "position": {
+      "x": 0,
+      "y": 133,
+      "z": 43.89
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 215,
+    "objectId": -877512201,
+    "name": "Zone Capture Plate",
+    "position": {
+      "x": 108,
+      "y": 104.46,
+      "z": 24.99
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 216,
+    "objectId": -877512201,
+    "name": "Zone Capture Plate",
+    "position": {
+      "x": -114.35,
+      "y": 98.35,
+      "z": 40.14
+    },
+    "forward": {
+      "x": 0.7071,
+      "y": -0.7071
+    },
+    "heading": -45,
+    "category": 1
+  },
+  {
+    "index": 217,
+    "objectId": -1476457415,
+    "name": "KOTH Capture Zone",
+    "position": {
+      "x": 102.29,
+      "y": 0.08,
+      "z": 14.04
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 218,
+    "objectId": -1476457415,
+    "name": "KOTH Capture Zone",
+    "position": {
+      "x": -71.04,
+      "y": 0.08,
+      "z": 10.99
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 219,
+    "objectId": 1818458590,
+    "name": "Stronghold Capture Zone",
+    "position": {
+      "x": 0,
+      "y": 136.17,
+      "z": 43.84
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 220,
+    "objectId": -1476457415,
+    "name": "KOTH Capture Zone",
+    "position": {
+      "x": 0.03,
+      "y": 0.08,
+      "z": 47.41
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 221,
+    "objectId": 1818458590,
+    "name": "Stronghold Capture Zone",
+    "position": {
+      "x": 0,
+      "y": -136.17,
+      "z": 43.8
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 222,
+    "objectId": 1818458590,
+    "name": "Stronghold Capture Zone",
+    "position": {
+      "x": -0.08,
+      "y": 0,
+      "z": 46.92
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 223,
+    "objectId": -1902667258,
+    "name": "Landgrab Capture Zone",
+    "position": {
+      "x": -97.78,
+      "y": 0,
+      "z": 44.6
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 224,
+    "objectId": -1902667258,
+    "name": "Landgrab Capture Zone",
+    "position": {
+      "x": 0.22,
+      "y": 0,
+      "z": 47.6
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 225,
+    "objectId": -1902667258,
+    "name": "Landgrab Capture Zone",
+    "position": {
+      "x": 104.19,
+      "y": 0,
+      "z": 13.85
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 226,
+    "objectId": -1902667258,
+    "name": "Landgrab Capture Zone",
+    "position": {
+      "x": -131.14,
+      "y": -115.39,
+      "z": 31.29
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 227,
+    "objectId": -1902667258,
+    "name": "Landgrab Capture Zone",
+    "position": {
+      "x": -131.28,
+      "y": 115.31,
+      "z": 30.54
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 228,
+    "objectId": -1902667258,
+    "name": "Landgrab Capture Zone",
+    "position": {
+      "x": 0.12,
+      "y": -134,
+      "z": 43.74
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 229,
+    "objectId": -1902667258,
+    "name": "Landgrab Capture Zone",
+    "position": {
+      "x": 0.12,
+      "y": 134.11,
+      "z": 43.74
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 230,
+    "objectId": -1902667258,
+    "name": "Landgrab Capture Zone",
+    "position": {
+      "x": 109.3,
+      "y": -121.05,
+      "z": 32.06
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 231,
+    "objectId": -1902667258,
+    "name": "Landgrab Capture Zone",
+    "position": {
+      "x": 109.3,
+      "y": 121.06,
+      "z": 32.06
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 232,
+    "objectId": 750886580,
+    "name": "Attrition Dodgeball Overtime Zone",
+    "position": {
+      "x": -0.02,
+      "y": -0.01,
+      "z": 47.32
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 233,
+    "objectId": 737091117,
+    "name": "Shrinking Zone",
+    "position": {
+      "x": -0.14,
+      "y": 0,
+      "z": 57.57
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 234,
+    "objectId": 3464572,
+    "name": "Unknown (3464572)",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 46
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 235,
+    "objectId": 3464572,
+    "name": "Unknown (3464572)",
+    "position": {
+      "x": -120,
+      "y": 0,
+      "z": 26
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 236,
+    "objectId": 3464572,
+    "name": "Unknown (3464572)",
+    "position": {
+      "x": 108,
+      "y": 0,
+      "z": 29
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 237,
+    "objectId": 3464572,
+    "name": "Unknown (3464572)",
+    "position": {
+      "x": -0.1,
+      "y": 0.08,
+      "z": 24.99
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 238,
+    "objectId": 3464572,
+    "name": "Unknown (3464572)",
+    "position": {
+      "x": -0.1,
+      "y": 0.08,
+      "z": 28.49
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 239,
+    "objectId": -1239931096,
+    "name": "Unknown (-1239931096)",
+    "position": {
+      "x": -94.1,
+      "y": 0.08,
+      "z": 52.99
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 240,
+    "objectId": -1239931096,
+    "name": "Unknown (-1239931096)",
+    "position": {
+      "x": 108.91,
+      "y": -114.86,
+      "z": 20
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 241,
+    "objectId": -1239931096,
+    "name": "Unknown (-1239931096)",
+    "position": {
+      "x": -136.81,
+      "y": 120.47,
+      "z": 34
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 242,
+    "objectId": -1239931096,
+    "name": "Unknown (-1239931096)",
+    "position": {
+      "x": 127,
+      "y": 0,
+      "z": 30
+    },
+    "forward": {
+      "x": 0,
+      "y": 1
+    },
+    "heading": 90,
+    "category": 1
+  },
+  {
+    "index": 243,
+    "objectId": -1239931096,
+    "name": "Unknown (-1239931096)",
+    "position": {
+      "x": -114,
+      "y": 0,
+      "z": 20
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 244,
+    "objectId": 848694842,
+    "name": "Ball Stand",
+    "position": {
+      "x": -0.27,
+      "y": 0.22,
+      "z": 21.97
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 245,
+    "objectId": -1160081872,
+    "name": "Spartan Vettel's Armor Infected",
+    "position": {
+      "x": -139.57,
+      "y": -120.9,
+      "z": 30.26
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 246,
+    "objectId": -853110847,
+    "name": "Spartan Stone's Armor Infected",
+    "position": {
+      "x": -16.57,
+      "y": -119.91,
+      "z": 44.17
+    },
+    "forward": {
+      "x": 0.9597,
+      "y": 0.2812
+    },
+    "heading": 16.33,
+    "category": 1
+  },
+  {
+    "index": 247,
+    "objectId": -124242750,
+    "name": "Spartan Sorel's Armor Infected",
+    "position": {
+      "x": -18.56,
+      "y": 6.97,
+      "z": 47.32
+    },
+    "forward": {
+      "x": 0.4932,
+      "y": -0.8699
+    },
+    "heading": -60.45,
+    "category": 1
+  },
+  {
+    "index": 248,
+    "objectId": -1160081872,
+    "name": "Spartan Vettel's Armor Infected",
+    "position": {
+      "x": 89.19,
+      "y": 80.15,
+      "z": 44.07
+    },
+    "forward": {
+      "x": 0.9667,
+      "y": -0.2561
+    },
+    "heading": -14.84,
+    "category": 1
+  },
+  {
+    "index": 249,
+    "objectId": -853110847,
+    "name": "Spartan Stone's Armor Infected",
+    "position": {
+      "x": 16.1,
+      "y": -221.86,
+      "z": 34.06
+    },
+    "forward": {
+      "x": -0.4913,
+      "y": -0.871
+    },
+    "heading": -119.43,
+    "category": 1
+  },
+  {
+    "index": 250,
+    "objectId": -853110847,
+    "name": "Spartan Stone's Armor Infected",
+    "position": {
+      "x": -131.12,
+      "y": 133.56,
+      "z": 30.19
+    },
+    "forward": {
+      "x": 0.7823,
+      "y": -0.6229
+    },
+    "heading": -38.53,
+    "category": 1
+  },
+  {
+    "index": 251,
+    "objectId": -124242750,
+    "name": "Spartan Sorel's Armor Infected",
+    "position": {
+      "x": 9.97,
+      "y": 1.53,
+      "z": 22.03
+    },
+    "forward": {
+      "x": -0.998,
+      "y": -0.0628
+    },
+    "heading": -176.4,
+    "category": 1
+  },
+  {
+    "index": 252,
+    "objectId": -853110847,
+    "name": "Spartan Stone's Armor Infected",
+    "position": {
+      "x": -11.4,
+      "y": 16.1,
+      "z": 4.04
+    },
+    "forward": {
+      "x": 0.6491,
+      "y": 0.7607
+    },
+    "heading": 49.53,
+    "category": 1
+  },
+  {
+    "index": 253,
+    "objectId": -853110847,
+    "name": "Spartan Stone's Armor Infected",
+    "position": {
+      "x": 118.83,
+      "y": -82.38,
+      "z": 25.03
+    },
+    "forward": {
+      "x": 0.9987,
+      "y": 0.0507
+    },
+    "heading": 2.9,
+    "category": 1
+  },
+  {
+    "index": 254,
+    "objectId": -124242750,
+    "name": "Spartan Sorel's Armor Infected",
+    "position": {
+      "x": 0.71,
+      "y": 180.45,
+      "z": 36
+    },
+    "forward": {
+      "x": -0.0429,
+      "y": 0.9991
+    },
+    "heading": 92.46,
+    "category": 1
+  },
+  {
+    "index": 255,
+    "objectId": -1160081872,
+    "name": "Spartan Vettel's Armor Infected",
+    "position": {
+      "x": 104.03,
+      "y": -52.74,
+      "z": 25.35
+    },
+    "forward": {
+      "x": 0.7486,
+      "y": 0.6588
+    },
+    "heading": 41.35,
+    "category": 1
+  },
+  {
+    "index": 256,
+    "objectId": -124242750,
+    "name": "Spartan Sorel's Armor Infected",
+    "position": {
+      "x": -42.54,
+      "y": 78.39,
+      "z": 22.18
+    },
+    "forward": {
+      "x": 0.9385,
+      "y": 0.3452
+    },
+    "heading": 20.2,
+    "category": 1
+  },
+  {
+    "index": 257,
+    "objectId": -124242750,
+    "name": "Spartan Sorel's Armor Infected",
+    "position": {
+      "x": 75.18,
+      "y": 3.94,
+      "z": 11.12
+    },
+    "forward": {
+      "x": -0.9985,
+      "y": -0.0545
+    },
+    "heading": -176.87,
+    "category": 1
+  },
+  {
+    "index": 258,
+    "objectId": -381729683,
+    "name": "Ammo Crate",
+    "position": {
+      "x": -113,
+      "y": 0,
+      "z": 44
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 259,
+    "objectId": -381729683,
+    "name": "Ammo Crate",
+    "position": {
+      "x": 128.32,
+      "y": 0,
+      "z": 29.43
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 260,
+    "objectId": -381729683,
+    "name": "Ammo Crate",
+    "position": {
+      "x": 59,
+      "y": -131,
+      "z": 22
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 261,
+    "objectId": -381729683,
+    "name": "Ammo Crate",
+    "position": {
+      "x": -14,
+      "y": 118,
+      "z": 44
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  },
+  {
+    "index": 262,
+    "objectId": 914504198,
+    "name": "Player Blocker 2x2x2",
+    "position": {
+      "x": -42.85,
+      "y": 82.67,
+      "z": 21.76
+    },
+    "forward": {
+      "x": 0.7702,
+      "y": -0.6378
+    },
+    "heading": -39.63,
+    "category": 1
+  },
+  {
+    "index": 263,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": -42.3,
+      "y": 81.61,
+      "z": 20.51
+    },
+    "forward": {
+      "x": 0.816,
+      "y": 0.578
+    },
+    "heading": 35.31,
+    "category": 1
+  },
+  {
+    "index": 264,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": -45.24,
+      "y": 79.31,
+      "z": 20.51
+    },
+    "forward": {
+      "x": 0.7552,
+      "y": 0.6556
+    },
+    "heading": 40.96,
+    "category": 1
+  },
+  {
+    "index": 265,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": -42.43,
+      "y": 82.18,
+      "z": 20.51
+    },
+    "forward": {
+      "x": 0.5476,
+      "y": 0.8367
+    },
+    "heading": 56.8,
+    "category": 1
+  },
+  {
+    "index": 266,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": -47.41,
+      "y": 78.43,
+      "z": 22.9
+    },
+    "forward": {
+      "x": 0.5134,
+      "y": 0.8582
+    },
+    "heading": 59.11,
+    "category": 1
+  },
+  {
+    "index": 267,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": -48.16,
+      "y": 79.78,
+      "z": 22.9
+    },
+    "forward": {
+      "x": 0.5134,
+      "y": 0.8582
+    },
+    "heading": 59.11,
+    "category": 1
+  },
+  {
+    "index": 268,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": -1.21,
+      "y": 175.68,
+      "z": 36.96
+    },
+    "forward": {
+      "x": -0.9259,
+      "y": 0.3778
+    },
+    "heading": 157.8,
+    "category": 1
+  },
+  {
+    "index": 269,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": -0.5,
+      "y": 175.81,
+      "z": 36.96
+    },
+    "forward": {
+      "x": -0.6901,
+      "y": 0.7237
+    },
+    "heading": 133.64,
+    "category": 1
+  },
+  {
+    "index": 270,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": -0.45,
+      "y": 178.46,
+      "z": 34.58
+    },
+    "forward": {
+      "x": -0.4694,
+      "y": 0.883
+    },
+    "heading": 117.99,
+    "category": 1
+  },
+  {
+    "index": 271,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": -2.03,
+      "y": 181.84,
+      "z": 34.58
+    },
+    "forward": {
+      "x": -0.3801,
+      "y": 0.9249
+    },
+    "heading": 112.34,
+    "category": 1
+  },
+  {
+    "index": 272,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": -2.61,
+      "y": 181.84,
+      "z": 34.58
+    },
+    "forward": {
+      "x": -0.6925,
+      "y": 0.7214
+    },
+    "heading": 133.83,
+    "category": 1
+  },
+  {
+    "index": 273,
+    "objectId": 914504198,
+    "name": "Player Blocker 2x2x2",
+    "position": {
+      "x": -3.19,
+      "y": 181.54,
+      "z": 35.82
+    },
+    "forward": {
+      "x": 0.7944,
+      "y": 0.6074
+    },
+    "heading": 37.4,
+    "category": 1
+  },
+  {
+    "index": 274,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": 74.07,
+      "y": 1.09,
+      "z": 9.59
+    },
+    "forward": {
+      "x": -0.9763,
+      "y": -0.2165
+    },
+    "heading": -167.49,
+    "category": 1
+  },
+  {
+    "index": 275,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": 73.98,
+      "y": 0.52,
+      "z": 9.59
+    },
+    "forward": {
+      "x": -0.8291,
+      "y": -0.5591
+    },
+    "heading": -146.01,
+    "category": 1
+  },
+  {
+    "index": 276,
+    "objectId": 914504198,
+    "name": "Player Blocker 2x2x2",
+    "position": {
+      "x": 74.18,
+      "y": -0.1,
+      "z": 10.84
+    },
+    "forward": {
+      "x": -0.4628,
+      "y": 0.8865
+    },
+    "heading": 117.57,
+    "category": 1
+  },
+  {
+    "index": 277,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": 77.68,
+      "y": 2.07,
+      "z": 9.59
+    },
+    "forward": {
+      "x": -0.9502,
+      "y": -0.3116
+    },
+    "heading": -161.84,
+    "category": 1
+  },
+  {
+    "index": 278,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": 80.05,
+      "y": 0.72,
+      "z": 11.45
+    },
+    "forward": {
+      "x": -0.8059,
+      "y": -0.5921
+    },
+    "heading": -143.69,
+    "category": 1
+  },
+  {
+    "index": 279,
+    "objectId": 914504198,
+    "name": "Player Blocker 2x2x2",
+    "position": {
+      "x": 78.77,
+      "y": 2.81,
+      "z": 12.34
+    },
+    "forward": {
+      "x": -0.1724,
+      "y": 0.985
+    },
+    "heading": 99.93,
+    "category": 1
+  },
+  {
+    "index": 280,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": 104.93,
+      "y": -53.71,
+      "z": 23.93
+    },
+    "forward": {
+      "x": -0.6449,
+      "y": -0.7642
+    },
+    "heading": -130.16,
+    "category": 1
+  },
+  {
+    "index": 281,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": 102.12,
+      "y": -51.26,
+      "z": 23.93
+    },
+    "forward": {
+      "x": -0.6449,
+      "y": -0.7642
+    },
+    "heading": -130.16,
+    "category": 1
+  },
+  {
+    "index": 282,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": 104.96,
+      "y": -52.53,
+      "z": 23.53
+    },
+    "forward": {
+      "x": -0.6449,
+      "y": -0.7642
+    },
+    "heading": -130.16,
+    "category": 1
+  },
+  {
+    "index": 283,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": 102.03,
+      "y": -50.07,
+      "z": 23.53
+    },
+    "forward": {
+      "x": -0.6449,
+      "y": -0.7642
+    },
+    "heading": -130.16,
+    "category": 1
+  },
+  {
+    "index": 284,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": 100.94,
+      "y": -51.38,
+      "z": 23.53
+    },
+    "forward": {
+      "x": -0.6449,
+      "y": -0.7642
+    },
+    "heading": -130.16,
+    "category": 1
+  },
+  {
+    "index": 285,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": 103.15,
+      "y": -54.65,
+      "z": 23.53
+    },
+    "forward": {
+      "x": 0.1609,
+      "y": -0.987
+    },
+    "heading": -80.74,
+    "category": 1
+  },
+  {
+    "index": 286,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": 105.06,
+      "y": -54.86,
+      "z": 23.53
+    },
+    "forward": {
+      "x": -0.6449,
+      "y": -0.7642
+    },
+    "heading": -130.16,
+    "category": 1
+  },
+  {
+    "index": 287,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": 106.21,
+      "y": -53.57,
+      "z": 23.53
+    },
+    "forward": {
+      "x": -0.6449,
+      "y": -0.7642
+    },
+    "heading": -130.16,
+    "category": 1
+  },
+  {
+    "index": 288,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": 90.37,
+      "y": 77.95,
+      "z": 42.26
+    },
+    "forward": {
+      "x": -0.9996,
+      "y": 0.0276
+    },
+    "heading": 178.42,
+    "category": 1
+  },
+  {
+    "index": 289,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": 90.4,
+      "y": 79.57,
+      "z": 42.26
+    },
+    "forward": {
+      "x": -0.9996,
+      "y": 0.0276
+    },
+    "heading": 178.42,
+    "category": 1
+  },
+  {
+    "index": 290,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": 90.5,
+      "y": 83.4,
+      "z": 42.26
+    },
+    "forward": {
+      "x": -0.9996,
+      "y": 0.0276
+    },
+    "heading": 178.42,
+    "category": 1
+  },
+  {
+    "index": 291,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": 88.8,
+      "y": 83.44,
+      "z": 42.26
+    },
+    "forward": {
+      "x": -0.9996,
+      "y": 0.0276
+    },
+    "heading": 178.42,
+    "category": 1
+  },
+  {
+    "index": 292,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": 87.62,
+      "y": 79.67,
+      "z": 42.26
+    },
+    "forward": {
+      "x": -0.6713,
+      "y": -0.7412
+    },
+    "heading": -132.17,
+    "category": 1
+  },
+  {
+    "index": 293,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": 88.65,
+      "y": 78.05,
+      "z": 42.26
+    },
+    "forward": {
+      "x": -0.9996,
+      "y": 0.0276
+    },
+    "heading": 178.42,
+    "category": 1
+  },
+  {
+    "index": 294,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": 89.46,
+      "y": 78.87,
+      "z": 42.65
+    },
+    "forward": {
+      "x": -0.9996,
+      "y": 0.0276
+    },
+    "heading": 178.42,
+    "category": 1
+  },
+  {
+    "index": 295,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": 89.63,
+      "y": 82.59,
+      "z": 42.65
+    },
+    "forward": {
+      "x": -0.9996,
+      "y": 0.0276
+    },
+    "heading": 178.42,
+    "category": 1
+  },
+  {
+    "index": 296,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": -130.57,
+      "y": 138.21,
+      "z": 30.5
+    },
+    "forward": {
+      "x": -0.0972,
+      "y": -0.9953
+    },
+    "heading": -95.58,
+    "category": 1
+  },
+  {
+    "index": 297,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": -129.32,
+      "y": 137.31,
+      "z": 30.4
+    },
+    "forward": {
+      "x": -0.0972,
+      "y": -0.9953
+    },
+    "heading": -95.58,
+    "category": 1
+  },
+  {
+    "index": 298,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": -132.58,
+      "y": 136.48,
+      "z": 28.75
+    },
+    "forward": {
+      "x": -0.6529,
+      "y": -0.7574
+    },
+    "heading": -130.76,
+    "category": 1
+  },
+  {
+    "index": 299,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": -135.31,
+      "y": 133.95,
+      "z": 28.75
+    },
+    "forward": {
+      "x": -0.7243,
+      "y": -0.6894
+    },
+    "heading": -136.41,
+    "category": 1
+  },
+  {
+    "index": 300,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": -134.94,
+      "y": 133.25,
+      "z": 28.75
+    },
+    "forward": {
+      "x": -0.4215,
+      "y": -0.9068
+    },
+    "heading": -114.93,
+    "category": 1
+  },
+  {
+    "index": 301,
+    "objectId": 914504198,
+    "name": "Player Blocker 2x2x2",
+    "position": {
+      "x": -135.6,
+      "y": 134.39,
+      "z": 30.11
+    },
+    "forward": {
+      "x": -0.7146,
+      "y": 0.6995
+    },
+    "heading": 135.61,
+    "category": 1
+  },
+  {
+    "index": 302,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": -138.52,
+      "y": -121.54,
+      "z": 28.52
+    },
+    "forward": {
+      "x": -0.9964,
+      "y": -0.0844
+    },
+    "heading": -175.16,
+    "category": 1
+  },
+  {
+    "index": 303,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": -138.85,
+      "y": -117.72,
+      "z": 28.52
+    },
+    "forward": {
+      "x": -0.9964,
+      "y": -0.0844
+    },
+    "heading": -175.16,
+    "category": 1
+  },
+  {
+    "index": 304,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": -140.55,
+      "y": -117.88,
+      "z": 28.52
+    },
+    "forward": {
+      "x": -0.9964,
+      "y": -0.0844
+    },
+    "heading": -175.16,
+    "category": 1
+  },
+  {
+    "index": 305,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": -141.3,
+      "y": -121.76,
+      "z": 28.52
+    },
+    "forward": {
+      "x": -0.5841,
+      "y": -0.8116
+    },
+    "heading": -125.74,
+    "category": 1
+  },
+  {
+    "index": 306,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": -140.1,
+      "y": -123.25,
+      "z": 28.52
+    },
+    "forward": {
+      "x": -0.9964,
+      "y": -0.0844
+    },
+    "heading": -175.16,
+    "category": 1
+  },
+  {
+    "index": 307,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": -139.38,
+      "y": -122.35,
+      "z": 28.91
+    },
+    "forward": {
+      "x": -0.9964,
+      "y": -0.0844
+    },
+    "heading": -175.16,
+    "category": 1
+  },
+  {
+    "index": 308,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": -139.63,
+      "y": -118.63,
+      "z": 28.91
+    },
+    "forward": {
+      "x": -0.9964,
+      "y": -0.0844
+    },
+    "heading": -175.16,
+    "category": 1
+  },
+  {
+    "index": 309,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": -138.37,
+      "y": -123.16,
+      "z": 28.52
+    },
+    "forward": {
+      "x": -0.9964,
+      "y": -0.0844
+    },
+    "heading": -175.16,
+    "category": 1
+  },
+  {
+    "index": 310,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": -12.55,
+      "y": 12.11,
+      "z": 2.67
+    },
+    "forward": {
+      "x": -0.8185,
+      "y": -0.5744
+    },
+    "heading": -144.94,
+    "category": 1
+  },
+  {
+    "index": 311,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": -11.75,
+      "y": 12.66,
+      "z": 2.67
+    },
+    "forward": {
+      "x": -0.8185,
+      "y": -0.5744
+    },
+    "heading": -144.94,
+    "category": 1
+  },
+  {
+    "index": 312,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": -13.52,
+      "y": 15.18,
+      "z": 2.67
+    },
+    "forward": {
+      "x": -0.8185,
+      "y": -0.5744
+    },
+    "heading": -144.94,
+    "category": 1
+  },
+  {
+    "index": 313,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": -14.33,
+      "y": 14.64,
+      "z": 2.67
+    },
+    "forward": {
+      "x": -0.8185,
+      "y": -0.5744
+    },
+    "heading": -144.94,
+    "category": 1
+  },
+  {
+    "index": 314,
+    "objectId": 914504198,
+    "name": "Player Blocker 2x2x2",
+    "position": {
+      "x": -12.41,
+      "y": 11.53,
+      "z": 4.06
+    },
+    "forward": {
+      "x": -0.4628,
+      "y": 0.8865
+    },
+    "heading": 117.57,
+    "category": 1
+  },
+  {
+    "index": 315,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": 15.07,
+      "y": 0.64,
+      "z": 22.21
+    },
+    "forward": {
+      "x": -0.7097,
+      "y": -0.7045
+    },
+    "heading": -135.21,
+    "category": 1
+  },
+  {
+    "index": 316,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": 14.67,
+      "y": -1.13,
+      "z": 22.04
+    },
+    "forward": {
+      "x": -0.7097,
+      "y": -0.7045
+    },
+    "heading": -135.21,
+    "category": 1
+  },
+  {
+    "index": 317,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": 11.95,
+      "y": 0.04,
+      "z": 20.75
+    },
+    "forward": {
+      "x": -0.8939,
+      "y": -0.4483
+    },
+    "heading": -153.36,
+    "category": 1
+  },
+  {
+    "index": 318,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": 8.54,
+      "y": -1.46,
+      "z": 20.75
+    },
+    "forward": {
+      "x": -0.9337,
+      "y": -0.3582
+    },
+    "heading": -159.01,
+    "category": 1
+  },
+  {
+    "index": 319,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": 8.52,
+      "y": -2.03,
+      "z": 20.75
+    },
+    "forward": {
+      "x": -0.7376,
+      "y": -0.6752
+    },
+    "heading": -137.53,
+    "category": 1
+  },
+  {
+    "index": 320,
+    "objectId": 914504198,
+    "name": "Player Blocker 2x2x2",
+    "position": {
+      "x": 8.81,
+      "y": -2.62,
+      "z": 22
+    },
+    "forward": {
+      "x": -0.5885,
+      "y": 0.8085
+    },
+    "heading": 126.05,
+    "category": 1
+  },
+  {
+    "index": 321,
+    "objectId": 914504198,
+    "name": "Player Blocker 2x2x2",
+    "position": {
+      "x": -14.36,
+      "y": 7.87,
+      "z": 47
+    },
+    "forward": {
+      "x": -0.3741,
+      "y": -0.9274
+    },
+    "heading": -111.97,
+    "category": 1
+  },
+  {
+    "index": 322,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": -15.2,
+      "y": 7.02,
+      "z": 45.75
+    },
+    "forward": {
+      "x": 0.7984,
+      "y": -0.6022
+    },
+    "heading": -37.03,
+    "category": 1
+  },
+  {
+    "index": 323,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": -18.28,
+      "y": 9.12,
+      "z": 45.75
+    },
+    "forward": {
+      "x": 0.8538,
+      "y": -0.5207
+    },
+    "heading": -31.38,
+    "category": 1
+  },
+  {
+    "index": 324,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": -18.73,
+      "y": 12.05,
+      "z": 47.03
+    },
+    "forward": {
+      "x": 0.9735,
+      "y": -0.2288
+    },
+    "heading": -13.23,
+    "category": 1
+  },
+  {
+    "index": 325,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": -20,
+      "y": 11.53,
+      "z": 47.21
+    },
+    "forward": {
+      "x": 0.9735,
+      "y": -0.2288
+    },
+    "heading": -13.23,
+    "category": 1
+  },
+  {
+    "index": 326,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": -14.84,
+      "y": 8.75,
+      "z": 45.75
+    },
+    "forward": {
+      "x": 0.9636,
+      "y": 0.2674
+    },
+    "heading": 15.51,
+    "category": 1
+  },
+  {
+    "index": 327,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": -19.7,
+      "y": -119.96,
+      "z": 42.61
+    },
+    "forward": {
+      "x": -0.9985,
+      "y": 0.0555
+    },
+    "heading": 176.82,
+    "category": 1
+  },
+  {
+    "index": 328,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": -19.87,
+      "y": -123.04,
+      "z": 42.61
+    },
+    "forward": {
+      "x": -0.9985,
+      "y": 0.0555
+    },
+    "heading": 176.82,
+    "category": 1
+  },
+  {
+    "index": 329,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": -18.89,
+      "y": -123.11,
+      "z": 42.61
+    },
+    "forward": {
+      "x": -0.9985,
+      "y": 0.0555
+    },
+    "heading": 176.82,
+    "category": 1
+  },
+  {
+    "index": 330,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": -18.72,
+      "y": -120.03,
+      "z": 42.61
+    },
+    "forward": {
+      "x": -0.9985,
+      "y": 0.0555
+    },
+    "heading": 176.82,
+    "category": 1
+  },
+  {
+    "index": 331,
+    "objectId": 914504198,
+    "name": "Player Blocker 2x2x2",
+    "position": {
+      "x": -20.11,
+      "y": -123.58,
+      "z": 44
+    },
+    "forward": {
+      "x": 0.1853,
+      "y": 0.9827
+    },
+    "heading": 79.32,
+    "category": 1
+  },
+  {
+    "index": 332,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": -18.83,
+      "y": -116.33,
+      "z": 44.12
+    },
+    "forward": {
+      "x": -0.8511,
+      "y": 0.5251
+    },
+    "heading": 148.33,
+    "category": 1
+  },
+  {
+    "index": 333,
+    "objectId": 914504198,
+    "name": "Player Blocker 2x2x2",
+    "position": {
+      "x": -20.4,
+      "y": -118.56,
+      "z": 45.27
+    },
+    "forward": {
+      "x": -0.9028,
+      "y": 0.4302
+    },
+    "heading": 154.52,
+    "category": 1
+  },
+  {
+    "index": 334,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": 115.77,
+      "y": -81.53,
+      "z": 23.63
+    },
+    "forward": {
+      "x": -0.9399,
+      "y": 0.3416
+    },
+    "heading": 160.03,
+    "category": 1
+  },
+  {
+    "index": 335,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": 116.68,
+      "y": -81.88,
+      "z": 23.63
+    },
+    "forward": {
+      "x": -0.9399,
+      "y": 0.3416
+    },
+    "heading": 160.03,
+    "category": 1
+  },
+  {
+    "index": 336,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": 117.64,
+      "y": -78.31,
+      "z": 25.14
+    },
+    "forward": {
+      "x": -0.6631,
+      "y": 0.7485
+    },
+    "heading": 131.54,
+    "category": 1
+  },
+  {
+    "index": 337,
+    "objectId": 914504198,
+    "name": "Player Blocker 2x2x2",
+    "position": {
+      "x": 115.5,
+      "y": -79.99,
+      "z": 26.29
+    },
+    "forward": {
+      "x": -0.74,
+      "y": 0.6726
+    },
+    "heading": 137.73,
+    "category": 1
+  },
+  {
+    "index": 338,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": 114.71,
+      "y": -84.43,
+      "z": 23.63
+    },
+    "forward": {
+      "x": -0.9399,
+      "y": 0.3416
+    },
+    "heading": 160.03,
+    "category": 1
+  },
+  {
+    "index": 339,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": 115.63,
+      "y": -84.78,
+      "z": 23.63
+    },
+    "forward": {
+      "x": -0.9399,
+      "y": 0.3416
+    },
+    "heading": 160.03,
+    "category": 1
+  },
+  {
+    "index": 340,
+    "objectId": 914504198,
+    "name": "Player Blocker 2x2x2",
+    "position": {
+      "x": 114.32,
+      "y": -84.88,
+      "z": 25.02
+    },
+    "forward": {
+      "x": 0.4612,
+      "y": 0.8873
+    },
+    "heading": 62.53,
+    "category": 1
+  },
+  {
+    "index": 341,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": 18.28,
+      "y": -219.73,
+      "z": 32.59
+    },
+    "forward": {
+      "x": 0.7343,
+      "y": 0.6788
+    },
+    "heading": 42.75,
+    "category": 1
+  },
+  {
+    "index": 342,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": 17.55,
+      "y": -220.39,
+      "z": 32.59
+    },
+    "forward": {
+      "x": 0.7343,
+      "y": 0.6788
+    },
+    "heading": 42.75,
+    "category": 1
+  },
+  {
+    "index": 343,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": 20.28,
+      "y": -222.88,
+      "z": 34.1
+    },
+    "forward": {
+      "x": 0.9692,
+      "y": 0.2464
+    },
+    "heading": 14.26,
+    "category": 1
+  },
+  {
+    "index": 344,
+    "objectId": 914504198,
+    "name": "Player Blocker 2x2x2",
+    "position": {
+      "x": 19.77,
+      "y": -220.21,
+      "z": 35.24
+    },
+    "forward": {
+      "x": 0.9369,
+      "y": 0.3495
+    },
+    "heading": 20.46,
+    "category": 1
+  },
+  {
+    "index": 345,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": 16.18,
+      "y": -217.47,
+      "z": 32.59
+    },
+    "forward": {
+      "x": 0.7343,
+      "y": 0.6788
+    },
+    "heading": 42.75,
+    "category": 1
+  },
+  {
+    "index": 346,
+    "objectId": -1966135157,
+    "name": "Player Blocker 4x4x4",
+    "position": {
+      "x": 15.45,
+      "y": -218.12,
+      "z": 32.59
+    },
+    "forward": {
+      "x": 0.7343,
+      "y": 0.6788
+    },
+    "heading": 42.75,
+    "category": 1
+  },
+  {
+    "index": 347,
+    "objectId": 914504198,
+    "name": "Player Blocker 2x2x2",
+    "position": {
+      "x": 15.97,
+      "y": -216.92,
+      "z": 33.97
+    },
+    "forward": {
+      "x": 0.5773,
+      "y": -0.8166
+    },
+    "heading": -54.74,
+    "category": 1
+  },
+  {
+    "index": 348,
+    "objectId": -1342546397,
+    "name": "Generic Skull",
+    "position": {
+      "x": -20.32,
+      "y": 197.75,
+      "z": 57.66
+    },
+    "forward": {
+      "x": 0,
+      "y": 1
+    },
+    "heading": 90,
+    "category": 1
+  },
+  {
+    "index": 349,
+    "objectId": -1855279381,
+    "name": "Generic Zone",
+    "position": {
+      "x": -1.28,
+      "y": 191.26,
+      "z": 35.82
+    },
+    "forward": {
+      "x": -0.0123,
+      "y": 0.9999
+    },
+    "heading": 90.7,
+    "category": 1
+  },
+  {
+    "index": 350,
+    "objectId": -1855279381,
+    "name": "Generic Zone",
+    "position": {
+      "x": 0.09,
+      "y": -191.47,
+      "z": 35.5
+    },
+    "forward": {
+      "x": -0.0123,
+      "y": 0.9999
+    },
+    "heading": 90.7,
+    "category": 1
+  },
+  {
+    "index": 351,
+    "objectId": -1855279381,
+    "name": "Generic Zone",
+    "position": {
+      "x": -135.08,
+      "y": -120.05,
+      "z": 29.41
+    },
+    "forward": {
+      "x": -0.0123,
+      "y": 0.9999
+    },
+    "heading": 90.7,
+    "category": 1
+  },
+  {
+    "index": 352,
+    "objectId": -1855279381,
+    "name": "Generic Zone",
+    "position": {
+      "x": -135.67,
+      "y": 119.94,
+      "z": 29.86
+    },
+    "forward": {
+      "x": -0.0123,
+      "y": 0.9999
+    },
+    "heading": 90.7,
+    "category": 1
+  },
+  {
+    "index": 353,
+    "objectId": -1855279381,
+    "name": "Generic Zone",
+    "position": {
+      "x": 107.81,
+      "y": 97.17,
+      "z": 24.86
+    },
+    "forward": {
+      "x": -0.0123,
+      "y": 0.9999
+    },
+    "heading": 90.7,
+    "category": 1
+  },
+  {
+    "index": 354,
+    "objectId": -1855279381,
+    "name": "Generic Zone",
+    "position": {
+      "x": 107.25,
+      "y": -98.61,
+      "z": 24.66
+    },
+    "forward": {
+      "x": -0.0123,
+      "y": 0.9999
+    },
+    "heading": 90.7,
+    "category": 1
+  },
+  {
+    "index": 355,
+    "objectId": -1855279381,
+    "name": "Generic Zone",
+    "position": {
+      "x": -62.94,
+      "y": 0.34,
+      "z": 10.13
+    },
+    "forward": {
+      "x": -0.0123,
+      "y": 0.9999
+    },
+    "heading": 90.7,
+    "category": 1
+  },
+  {
+    "index": 356,
+    "objectId": -1855279381,
+    "name": "Generic Zone",
+    "position": {
+      "x": 63.4,
+      "y": 0.36,
+      "z": 10.16
+    },
+    "forward": {
+      "x": -0.0123,
+      "y": 0.9999
+    },
+    "heading": 90.7,
+    "category": 1
+  },
+  {
+    "index": 357,
+    "objectId": -863615175,
+    "name": "Unknown (-863615175)",
+    "position": {
+      "x": 0,
+      "y": -131,
+      "z": 43.89
+    },
+    "forward": {
+      "x": -0.9999,
+      "y": -0.0123
+    },
+    "heading": -179.3,
+    "category": 1
+  },
+  {
+    "index": 358,
+    "objectId": -1855279381,
+    "name": "Generic Zone",
+    "position": {
+      "x": 0,
+      "y": -131,
+      "z": 43.89
+    },
+    "forward": {
+      "x": -0.9999,
+      "y": -0.0123
+    },
+    "heading": -179.3,
+    "category": 1
+  },
+  {
+    "index": 359,
+    "objectId": 848694842,
+    "name": "Ball Stand",
+    "position": {
+      "x": 0,
+      "y": 190,
+      "z": 36.11
+    },
+    "forward": {
+      "x": -1,
+      "y": 0
+    },
+    "heading": 180,
+    "category": 1
+  },
+  {
+    "index": 360,
+    "objectId": -721267272,
+    "name": "Unknown (-721267272)",
+    "position": {
+      "x": 0,
+      "y": 190,
+      "z": 38.11
+    },
+    "forward": {
+      "x": -1,
+      "y": 0
+    },
+    "heading": 180,
+    "category": 1
+  },
+  {
+    "index": 361,
+    "objectId": -863615175,
+    "name": "Unknown (-863615175)",
+    "position": {
+      "x": 0,
+      "y": 131,
+      "z": 43.9
+    },
+    "forward": {
+      "x": -0.9999,
+      "y": -0.0123
+    },
+    "heading": -179.3,
+    "category": 1
+  },
+  {
+    "index": 362,
+    "objectId": -1855279381,
+    "name": "Generic Zone",
+    "position": {
+      "x": 0,
+      "y": 131,
+      "z": 43.8
+    },
+    "forward": {
+      "x": -0.9999,
+      "y": -0.0123
+    },
+    "heading": -179.3,
+    "category": 1
+  },
+  {
+    "index": 363,
+    "objectId": 1688143539,
+    "name": "UNSC Explosion Huge",
+    "position": {
+      "x": 0.03,
+      "y": -36.99,
+      "z": 7.47
+    },
+    "forward": {
+      "x": -0.0123,
+      "y": 0.9999
+    },
+    "heading": 90.7,
+    "category": 23
+  },
+  {
+    "index": 364,
+    "objectId": 848694842,
+    "name": "Ball Stand",
+    "position": {
+      "x": 0,
+      "y": -190,
+      "z": 36.1
+    },
+    "forward": {
+      "x": -1,
+      "y": 0
+    },
+    "heading": 180,
+    "category": 1
+  },
+  {
+    "index": 365,
+    "objectId": -721267272,
+    "name": "Unknown (-721267272)",
+    "position": {
+      "x": 0,
+      "y": -190,
+      "z": 38.1
+    },
+    "forward": {
+      "x": -0.1211,
+      "y": 0.7655
+    },
+    "heading": 98.99,
+    "category": 1
+  },
+  {
+    "index": 366,
+    "objectId": -721267272,
+    "name": "Unknown (-721267272)",
+    "position": {
+      "x": -0.25,
+      "y": 0.22,
+      "z": 23.95
+    },
+    "forward": {
+      "x": -1,
+      "y": 0
+    },
+    "heading": 180,
+    "category": 1
+  },
+  {
+    "index": 367,
+    "objectId": 848694842,
+    "name": "Ball Stand",
+    "position": {
+      "x": -0.25,
+      "y": 0.22,
+      "z": 21.95
+    },
+    "forward": {
+      "x": -1,
+      "y": 0
+    },
+    "heading": 180,
+    "category": 1
+  },
+  {
+    "index": 368,
+    "objectId": 1597478195,
+    "name": "Weapon Pad",
+    "position": {
+      "x": -104,
+      "y": 0,
+      "z": 7
+    },
+    "forward": {
+      "x": 1,
+      "y": 0
+    },
+    "heading": 0,
+    "category": 1
+  }
+]

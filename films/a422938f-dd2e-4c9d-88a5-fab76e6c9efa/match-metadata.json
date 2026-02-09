@@ -1,0 +1,262 @@
+{
+  "MatchId": "a422938f-dd2e-4c9d-88a5-fab76e6c9efa",
+  "MatchInfo": {
+    "StartTime": "2026-02-08T18:33:53.038Z",
+    "EndTime": "2026-02-08T18:36:13.59Z",
+    "Duration": "PT2M4.1699013S",
+    "LifecycleMode": 1,
+    "GameVariantCategory": 6,
+    "LevelId": "fc878857-e778-4daf-b0ef-5d826b922f3f",
+    "MapVariant": {
+      "AssetKind": 2,
+      "AssetId": "c395f3ac-4614-45f9-a83a-56f69e8ae962",
+      "VersionId": "dda9eaa7-441d-45ef-983b-bf9e89298be5"
+    },
+    "UgcGameVariant": {
+      "AssetKind": 6,
+      "AssetId": "1e8cd10b-1496-423b-8699-f98f6f5db67e",
+      "VersionId": "ae66f4aa-a6fc-464a-ae9f-e2db13c1342d"
+    },
+    "ClearanceId": "f07ea541-edb5-4868-8311-754129321b6f",
+    "Playlist": null,
+    "PlaylistExperience": null,
+    "PlaylistMapModePair": null,
+    "SeasonId": null,
+    "PlayableDuration": "PT2M4.172S",
+    "TeamsEnabled": true,
+    "TeamScoringEnabled": true,
+    "GameplayInteraction": 1
+  },
+  "Teams": [
+    {
+      "TeamId": 0,
+      "Outcome": 1,
+      "Rank": 1,
+      "Stats": {
+        "CoreStats": {
+          "Score": 0,
+          "PersonalScore": 0,
+          "RoundsWon": 0,
+          "RoundsLost": 0,
+          "RoundsTied": 1,
+          "Kills": 0,
+          "Deaths": 0,
+          "Assists": 0,
+          "KDA": 0,
+          "Suicides": 0,
+          "Betrayals": 0,
+          "AverageLifeDuration": "PT1M46.7S",
+          "GrenadeKills": 0,
+          "HeadshotKills": 0,
+          "MeleeKills": 0,
+          "PowerWeaponKills": 0,
+          "ShotsFired": 0,
+          "ShotsHit": 0,
+          "Accuracy": 0,
+          "DamageDealt": 0,
+          "DamageTaken": 0,
+          "CalloutAssists": 0,
+          "VehicleDestroys": 0,
+          "DriverAssists": 0,
+          "Hijacks": 0,
+          "EmpAssists": 0,
+          "MaxKillingSpree": 0,
+          "Medals": [],
+          "PersonalScores": [],
+          "DeprecatedDamageDealt": 0,
+          "DeprecatedDamageTaken": 0,
+          "Spawns": 1,
+          "ObjectivesCompleted": 0
+        },
+        "PvpStats": {
+          "Kills": 0,
+          "Deaths": 0,
+          "Assists": 0,
+          "KDA": 0
+        }
+      }
+    },
+    {
+      "TeamId": 1,
+      "Outcome": 1,
+      "Rank": 1,
+      "Stats": {
+        "CoreStats": {
+          "Score": 0,
+          "PersonalScore": 0,
+          "RoundsWon": 0,
+          "RoundsLost": 0,
+          "RoundsTied": 1,
+          "Kills": 0,
+          "Deaths": 0,
+          "Assists": 0,
+          "KDA": 0,
+          "Suicides": 0,
+          "Betrayals": 0,
+          "AverageLifeDuration": "PT1M46.7S",
+          "GrenadeKills": 0,
+          "HeadshotKills": 0,
+          "MeleeKills": 0,
+          "PowerWeaponKills": 0,
+          "ShotsFired": 0,
+          "ShotsHit": 0,
+          "Accuracy": 0,
+          "DamageDealt": 0,
+          "DamageTaken": 0,
+          "CalloutAssists": 0,
+          "VehicleDestroys": 0,
+          "DriverAssists": 0,
+          "Hijacks": 0,
+          "EmpAssists": 0,
+          "MaxKillingSpree": 0,
+          "Medals": [],
+          "PersonalScores": [],
+          "DeprecatedDamageDealt": 0,
+          "DeprecatedDamageTaken": 0,
+          "Spawns": 1,
+          "ObjectivesCompleted": 0
+        },
+        "PvpStats": {
+          "Kills": 0,
+          "Deaths": 0,
+          "Assists": 0,
+          "KDA": 0
+        }
+      }
+    }
+  ],
+  "Players": [
+    {
+      "PlayerId": "xuid(2533274855333605)",
+      "PlayerType": 1,
+      "BotAttributes": null,
+      "LastTeamId": 0,
+      "Outcome": 1,
+      "Rank": 1,
+      "ParticipationInfo": {
+        "FirstJoinedTime": "2026-02-08T18:34:09.404Z",
+        "LastLeaveTime": null,
+        "PresentAtBeginning": true,
+        "JoinedInProgress": false,
+        "LeftInProgress": false,
+        "PresentAtCompletion": true,
+        "TimePlayed": "PT2M4.172S",
+        "ConfirmedParticipation": null
+      },
+      "PlayerTeamStats": [
+        {
+          "TeamId": 0,
+          "Stats": {
+            "CoreStats": {
+              "Score": 0,
+              "PersonalScore": 0,
+              "RoundsWon": 0,
+              "RoundsLost": 0,
+              "RoundsTied": 1,
+              "Kills": 0,
+              "Deaths": 0,
+              "Assists": 0,
+              "KDA": 0,
+              "Suicides": 0,
+              "Betrayals": 0,
+              "AverageLifeDuration": "PT1M46.7S",
+              "GrenadeKills": 0,
+              "HeadshotKills": 0,
+              "MeleeKills": 0,
+              "PowerWeaponKills": 0,
+              "ShotsFired": 0,
+              "ShotsHit": 0,
+              "Accuracy": 0,
+              "DamageDealt": 0,
+              "DamageTaken": 0,
+              "CalloutAssists": 0,
+              "VehicleDestroys": 0,
+              "DriverAssists": 0,
+              "Hijacks": 0,
+              "EmpAssists": 0,
+              "MaxKillingSpree": 0,
+              "Medals": [],
+              "PersonalScores": [],
+              "DeprecatedDamageDealt": 0,
+              "DeprecatedDamageTaken": 0,
+              "Spawns": 1,
+              "ObjectivesCompleted": 0
+            },
+            "PvpStats": {
+              "Kills": 0,
+              "Deaths": 0,
+              "Assists": 0,
+              "KDA": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "PlayerId": "xuid(2533274961706094)",
+      "PlayerType": 1,
+      "BotAttributes": null,
+      "LastTeamId": 1,
+      "Outcome": 1,
+      "Rank": 1,
+      "ParticipationInfo": {
+        "FirstJoinedTime": "2026-02-08T18:34:09.419Z",
+        "LastLeaveTime": null,
+        "PresentAtBeginning": true,
+        "JoinedInProgress": false,
+        "LeftInProgress": false,
+        "PresentAtCompletion": true,
+        "TimePlayed": "PT2M4.172S",
+        "ConfirmedParticipation": null
+      },
+      "PlayerTeamStats": [
+        {
+          "TeamId": 1,
+          "Stats": {
+            "CoreStats": {
+              "Score": 0,
+              "PersonalScore": 0,
+              "RoundsWon": 0,
+              "RoundsLost": 0,
+              "RoundsTied": 1,
+              "Kills": 0,
+              "Deaths": 0,
+              "Assists": 0,
+              "KDA": 0,
+              "Suicides": 0,
+              "Betrayals": 0,
+              "AverageLifeDuration": "PT1M46.7S",
+              "GrenadeKills": 0,
+              "HeadshotKills": 0,
+              "MeleeKills": 0,
+              "PowerWeaponKills": 0,
+              "ShotsFired": 0,
+              "ShotsHit": 0,
+              "Accuracy": 0,
+              "DamageDealt": 0,
+              "DamageTaken": 0,
+              "CalloutAssists": 0,
+              "VehicleDestroys": 0,
+              "DriverAssists": 0,
+              "Hijacks": 0,
+              "EmpAssists": 0,
+              "MaxKillingSpree": 0,
+              "Medals": [],
+              "PersonalScores": [],
+              "DeprecatedDamageDealt": 0,
+              "DeprecatedDamageTaken": 0,
+              "Spawns": 1,
+              "ObjectivesCompleted": 0
+            },
+            "PvpStats": {
+              "Kills": 0,
+              "Deaths": 0,
+              "Assists": 0,
+              "KDA": 0
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

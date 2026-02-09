@@ -1,0 +1,70 @@
+# CLAUDE.md
+
+## Project overview
+
+FilmShell is a zero-dependency CLI (beyond two Halo API client libraries) that downloads Halo Infinite theater film data, extracts per-player movement from the raw binary chunks, fetches map metadata (MVAR), and renders SVG path visualizations.
+
+## Build and run
+
+```sh
+npm install        # install dependencies
+npm run build      # compile TypeScript (tsc)
+npm run dev        # build + run in one step
+npm start          # run pre-built dist/cli/index.js
+```
+
+There are no tests yet. The build (`npm run build`) is the primary verification — it must compile with zero errors under strict mode.
+
+## Project structure
+
+```
+src/
+  cli/                   # CLI tool — the main FilmShell pipeline
+    index.ts             # Entry point — orchestrates the 5-stage pipeline
+    ui.ts                # Centralized TUI: colors, gradient spinner, box drawing, structured output
+    auth.ts              # Xbox Live / Halo API authentication with encrypted token storage
+    film-downloader.ts   # Match history fetch, film chunk download and zlib decompression
+    map-metadata.ts      # MVAR asset fetch from Halo UGC API
+    bond-parser.ts       # Bond Compact Binary v2 parser (MVAR file format)
+    object-extractor.ts  # Extract map objects (spawns, weapons, flags) from parsed MVAR
+    motion-extractor.ts  # Binary frame scanning and position extraction from film chunks
+    svg-generator.ts     # Scale motion to world coords and render SVG
+    types.ts             # Shared type definitions
+    objects.json         # Object ID → name mapping (numeric IDs to human-readable names)
+films/                   # Reference films for offline testing (checked into source control)
+```
+
+## Architecture
+
+The pipeline has 5 stages, each driven from `src/cli/index.ts`:
+
+1. **Authentication** (`auth.ts`) — OAuth → Xbox Live → Spartan token chain
+2. **Download** (`film-downloader.ts`) — fetch match history, download/decompress film chunks
+3. **Map Analysis** (`map-metadata.ts` → `bond-parser.ts` → `object-extractor.ts`) — fetch MVAR, parse Bond binary, extract objects
+4. **Motion Extraction** (`motion-extractor.ts`) — scan film chunks for frame markers (`A0 7B 42`), auto-detect encoding variant, accumulate coordinate deltas
+5. **SVG Generation** (`svg-generator.ts`) — scale to world coordinates, render paths with map object overlays
+
+## Key conventions
+
+- **ESM-only** — the project uses `"type": "module"` with NodeNext module resolution. All local imports use `.js` extensions.
+- **Zero runtime dependencies** beyond `@dendotdev/conch` (Xbox auth) and `@dendotdev/grunt` (Halo API client). The TUI uses raw ANSI escape codes, no chalk/ora/ink.
+- **`onStatus` callback pattern** — modules accept an optional `onStatus?: (msg: string) => void` parameter. Internal progress messages route through this callback so `index.ts` can pipe them to spinners. When no callback is provided, modules fall back to `console.log(dim(...))`.
+- **Strict TypeScript** — `strict: true` in tsconfig. The build must produce zero errors.
+- **Film binary format** — not publicly documented. Motion extraction relies on reverse-engineered heuristics. Multiple encoding variants exist across different maps (base-0x09 standard, b3-variant, 40088064 fallback).
+
+## Reference films
+
+Six pre-downloaded films in `films/` can be re-processed without API access. All played on Aquarius with the human player making a full loop of the map:
+
+```sh
+npm start -- --match-id 53a98da9-718d-4374-b739-b0ee2e7033ba
+```
+
+Types: 2 PvP (2 humans), 2 PvE (human + bot — currently broken), 2 Solo (1 human).
+
+## Things to know
+
+- `config.json` and `tokens.bin` are gitignored and contain secrets — never commit them.
+- The `objects.json` ID mapping is incomplete. New object IDs are discovered by creating Forge maps with known placements and correlating MVAR dumps.
+- Bot matches produce incorrect path output — this is a known issue under investigation.
+- The version number displayed in the CLI banner is read from `package.json` at runtime.

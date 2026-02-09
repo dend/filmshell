@@ -1,0 +1,70 @@
+{
+  "FilmStatusBond": 1,
+  "CustomData": {
+    "FilmLength": 87716,
+    "Chunks": [
+      {
+        "Index": 0,
+        "ChunkStartTimeOffsetMilliseconds": 0,
+        "DurationMilliseconds": 10,
+        "ChunkSize": 431216,
+        "FileRelativePath": "/filmChunk0",
+        "ChunkType": 1
+      },
+      {
+        "Index": 1,
+        "ChunkStartTimeOffsetMilliseconds": 0,
+        "DurationMilliseconds": 19995,
+        "ChunkSize": 37206,
+        "FileRelativePath": "/filmChunk1",
+        "ChunkType": 2
+      },
+      {
+        "Index": 2,
+        "ChunkStartTimeOffsetMilliseconds": 19996,
+        "DurationMilliseconds": 20003,
+        "ChunkSize": 49307,
+        "FileRelativePath": "/filmChunk2",
+        "ChunkType": 2
+      },
+      {
+        "Index": 3,
+        "ChunkStartTimeOffsetMilliseconds": 39999,
+        "DurationMilliseconds": 20003,
+        "ChunkSize": 48931,
+        "FileRelativePath": "/filmChunk3",
+        "ChunkType": 2
+      },
+      {
+        "Index": 4,
+        "ChunkStartTimeOffsetMilliseconds": 60003,
+        "DurationMilliseconds": 20003,
+        "ChunkSize": 43804,
+        "FileRelativePath": "/filmChunk4",
+        "ChunkType": 2
+      },
+      {
+        "Index": 5,
+        "ChunkStartTimeOffsetMilliseconds": 80006,
+        "DurationMilliseconds": 7702,
+        "ChunkSize": 34704,
+        "FileRelativePath": "/filmChunk5",
+        "ChunkType": 2
+      },
+      {
+        "Index": 6,
+        "ChunkStartTimeOffsetMilliseconds": 87709,
+        "DurationMilliseconds": 0,
+        "ChunkSize": 31,
+        "FileRelativePath": "/filmChunk6",
+        "ChunkType": 3
+      }
+    ],
+    "HasGameEnded": true,
+    "ManifestRefreshSeconds": 30,
+    "MatchId": "2cf8d130-4363-48b1-b7b8-62b5a6e01454",
+    "FilmMajorVersion": 41
+  },
+  "BlobStoragePathPrefix": "https://blobs-infiniteugc.svc.halowaypoint.com/ugcstorage/film/902c5d10-ec04-491e-b5dd-25be7493f563/4d8fdaea-1bf0-481a-917d-112ec142f5ac/",
+  "AssetId": "902c5d10-ec04-491e-b5dd-25be7493f563"
+}

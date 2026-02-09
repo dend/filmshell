@@ -1,0 +1,23 @@
+{
+  "name": "filmshell",
+  "version": "1.0.0",
+  "description": "Halo Infinite film path visualizer CLI",
+  "type": "module",
+  "main": "dist/cli/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/cli/index.js",
+    "dev": "tsc && node dist/cli/index.js"
+  },
+  "dependencies": {
+    "@dendotdev/conch": "1.0.1",
+    "@dendotdev/grunt": "1.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "clientId": "YOUR_ENTRA_CLIENT_ID_HERE",
+  "redirectUri": "http://localhost/callback"
+}
