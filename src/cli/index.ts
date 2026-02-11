@@ -25,6 +25,7 @@ import { loadFilmChunks, extractAllPlayerPositions, computeMotionStats } from '.
 import {
   scaleMotionToWorld,
   scaleAllPlayersToWorld,
+  findBestSpawnAnchor,
   generateSvg,
   generateMultiPlayerSvg,
   getPlayerColor,
@@ -238,11 +239,25 @@ async function processFilm(
     detail('Duration', `~${motionStats.durationSeconds.toFixed(1)}s (est. 60Hz)`);
   }
 
+  // Find best spawn anchor for positioning
+  let spawnAnchor: { x: number; y: number } | null = null;
+  if (mapBounds && objects.length > 0 && playerPaths.length > 0) {
+    const initialSpawns = objects
+      .filter(o => o.name && o.name.includes('[Initial]'))
+      .map(o => ({ x: o.position.x, y: o.position.y }));
+    if (initialSpawns.length > 0) {
+      spawnAnchor = findBestSpawnAnchor(playerPaths[0].positions, mapBounds, initialSpawns);
+      if (spawnAnchor) {
+        detail('Anchor', `Initial Spawn at (${spawnAnchor.x.toFixed(1)}, ${spawnAnchor.y.toFixed(1)})`);
+      }
+    }
+  }
+
   // Scale all player paths to world coordinates
   let playerWorldPaths: PlayerWorldPath[];
   if (playerPaths.length > 1) {
     const allRawPositions = playerPaths.map(pp => pp.positions);
-    const allWorldPositions = scaleAllPlayersToWorld(allRawPositions, mapBounds, null);
+    const allWorldPositions = scaleAllPlayersToWorld(allRawPositions, mapBounds, spawnAnchor);
     playerWorldPaths = playerPaths.map((pp, idx) => ({
       playerIndex: pp.playerIndex,
       label: `P${pp.playerIndex + 1}`,
@@ -251,7 +266,7 @@ async function processFilm(
     }));
   } else {
     playerWorldPaths = playerPaths.map(pp => {
-      const worldPositions = scaleMotionToWorld(pp.positions, mapBounds, null);
+      const worldPositions = scaleMotionToWorld(pp.positions, mapBounds, spawnAnchor);
       return {
         playerIndex: pp.playerIndex,
         label: `P${pp.playerIndex + 1}`,

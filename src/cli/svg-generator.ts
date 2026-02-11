@@ -10,8 +10,12 @@ import type { MotionPoint, MapBounds, MapObject, WorldPosition, PlayerPath } fro
 const DEFAULT_SCALE = 0.003;
 
 // When auto-calibrating, target this percentage of map extent
-// 0.9 = path should fill ~90% of map (accounting for walls/margins)
+// 0.85 = path should fill ~85% of map (accounting for walls/margins)
 const MAP_FILL_FACTOR = 0.85;
+
+// Encoding bit-width ratio: coord1 is 16-bit (0-65535), coord2 is 12-bit (0-4095).
+// One raw coord2 unit covers 16x more world distance than one raw coord1 unit.
+const ENCODING_RATIO = 65536 / 4096; // = 16
 
 /**
  * Convert raw motion points to world coordinates using auto-calibrated scale.
@@ -49,14 +53,39 @@ export function scaleMotionToWorld(
   // Calculate scale factors based on map bounds
   let scaleX = DEFAULT_SCALE;
   let scaleY = DEFAULT_SCALE;
+  const encodingAspect = ENCODING_RATIO * (mapBounds?.width ?? 1) / (mapBounds?.height ?? 1);
 
-  if (mapBounds && mapBounds.width > 0 && rawExtentX > 0 && rawExtentY > 0) {
-    // Auto-calibrate: scale path to fill MAP_FILL_FACTOR of map
-    const targetWidth = mapBounds.width * MAP_FILL_FACTOR;
-    const targetHeight = mapBounds.height * MAP_FILL_FACTOR;
+  if (mapBounds && mapBounds.width > 0 && spawnAnchor && rawExtentY > 0) {
+    // Constraint-based: scale so path stays within map bounds from anchor.
+    // cumCoord1 → Y (positive = increasing world Y), cumCoord2 → X (negated).
+    const spaceYPos = mapBounds.maxY - spawnAnchor.y;  // room for cumC1 > 0
+    const spaceYNeg = spawnAnchor.y - mapBounds.minY;  // room for cumC1 < 0
+    const threshold = rawExtentY * 0.05;
 
-    scaleX = targetWidth / rawExtentX;
-    scaleY = targetHeight / rawExtentY;
+    scaleY = Infinity;
+    if (maxRawY > threshold) scaleY = Math.min(scaleY, spaceYPos / maxRawY);
+    if (-minRawY > threshold) scaleY = Math.min(scaleY, spaceYNeg / (-minRawY));
+
+    // Also check X constraints (X = -cumCoord2 * scaleX + spawnAnchor.x)
+    const spaceXNeg = spawnAnchor.x - mapBounds.minX;  // room for cumC2 > 0 (negative X)
+    const spaceXPos = mapBounds.maxX - spawnAnchor.x;  // room for cumC2 < 0 (positive X)
+    const thresholdX = rawExtentX * 0.05;
+
+    if (maxRawX > thresholdX) {
+      const scaleYFromX = spaceXNeg * encodingAspect / maxRawX;
+      scaleY = Math.min(scaleY, scaleYFromX);
+    }
+    if (-minRawX > thresholdX) {
+      const scaleYFromX = spaceXPos * encodingAspect / (-minRawX);
+      scaleY = Math.min(scaleY, scaleYFromX);
+    }
+
+    if (!isFinite(scaleY)) scaleY = DEFAULT_SCALE;
+    scaleX = scaleY / encodingAspect;
+  } else if (mapBounds && mapBounds.width > 0 && rawExtentY > 0) {
+    // Fallback: fill-factor approach (no spawn anchor available)
+    scaleY = mapBounds.height * MAP_FILL_FACTOR / rawExtentY;
+    scaleX = scaleY / encodingAspect;
   }
 
   // Convert raw coords to world coords with axis-specific scales
@@ -105,6 +134,78 @@ export function scaleMotionToWorld(
     y: d.y + offsetY,
     frame: d.frame,
   }));
+}
+
+/**
+ * Auto-detect the best Initial Spawn to anchor the path's start point.
+ *
+ * Tries each candidate spawn as the anchor and picks the one where the
+ * resulting path has the most points inside the map bounds.
+ */
+export function findBestSpawnAnchor(
+  positions: MotionPoint[],
+  mapBounds: MapBounds,
+  candidates: { x: number; y: number }[]
+): { x: number; y: number } | null {
+  if (positions.length === 0 || candidates.length === 0) return null;
+
+  // Compute scale factors (same logic as scaleMotionToWorld)
+  let minRawX = Infinity, maxRawX = -Infinity;
+  let minRawY = Infinity, maxRawY = -Infinity;
+  for (const p of positions) {
+    minRawX = Math.min(minRawX, p.cumCoord2);
+    maxRawX = Math.max(maxRawX, p.cumCoord2);
+    minRawY = Math.min(minRawY, p.cumCoord1);
+    maxRawY = Math.max(maxRawY, p.cumCoord1);
+  }
+  const rawExtentY = maxRawY - minRawY;
+
+  let scaleX = DEFAULT_SCALE;
+  let scaleY = DEFAULT_SCALE;
+  if (mapBounds.width > 0 && rawExtentY > 0) {
+    scaleY = mapBounds.height * MAP_FILL_FACTOR / rawExtentY;
+    scaleX = scaleY / (ENCODING_RATIO * mapBounds.width / mapBounds.height);
+  }
+
+  // Compute displacements (unanchored)
+  const displacements = positions.map(p => ({
+    x: -p.cumCoord2 * scaleX,
+    y: p.cumCoord1 * scaleY,
+  }));
+
+  const firstX = displacements[0].x;
+  const firstY = displacements[0].y;
+
+  // Map bounds extents
+  const halfW = mapBounds.width / 2;
+  const halfH = mapBounds.height / 2;
+  const minBX = mapBounds.centerX - halfW;
+  const maxBX = mapBounds.centerX + halfW;
+  const minBY = mapBounds.centerY - halfH;
+  const maxBY = mapBounds.centerY + halfH;
+
+  let bestCandidate: { x: number; y: number } | null = null;
+  let bestScore = -1;
+
+  for (const candidate of candidates) {
+    const offX = candidate.x - firstX;
+    const offY = candidate.y - firstY;
+
+    let inside = 0;
+    for (const d of displacements) {
+      if (d.x + offX >= minBX && d.x + offX <= maxBX &&
+          d.y + offY >= minBY && d.y + offY <= maxBY) {
+        inside++;
+      }
+    }
+
+    if (inside > bestScore) {
+      bestScore = inside;
+      bestCandidate = candidate;
+    }
+  }
+
+  return bestCandidate;
 }
 
 /**
@@ -158,9 +259,49 @@ export function scaleAllPlayersToWorld(
   // Unified scale factors from physical extent
   let scaleX = DEFAULT_SCALE;
   let scaleY = DEFAULT_SCALE;
-  if (mapBounds && mapBounds.width > 0 && physExtentX > 0 && physExtentY > 0) {
-    scaleX = (mapBounds.width * MAP_FILL_FACTOR) / physExtentX;
+  const encodingAspect = ENCODING_RATIO * (mapBounds?.width ?? 1) / (mapBounds?.height ?? 1);
+
+  if (mapBounds && mapBounds.width > 0 && spawnAnchor && physExtentY > 0) {
+    // Constraint-based: player 0's first frame anchors to spawnAnchor.
+    // Physical coords: physC1 = raw1 + cumC1, physC2 = raw2 + cumC2.
+    // World Y = physC1 * scaleY + offsetY, World X = -physC2 * scaleX + offsetX.
+    // With spawn anchor: offsetY = spawnAnchor.y - baselines[0].raw1 * scaleY,
+    //   so world Y = (physC1 - baselines[0].raw1) * scaleY + spawnAnchor.y for player 0 first frame.
+    // For ALL players: world Y = physC1 * scaleY + offsetY.
+    // Constraint: mapMinY ≤ world Y ≤ mapMaxY for all points.
+    const b0 = baselines[0];
+    // After anchoring, world Y = (physC1 - b0.raw1) * scaleY + spawnAnchor.y
+    // So physC1 extremes relative to anchor baseline:
+    const relMaxC1 = maxPhysC1 - b0.raw1;
+    const relMinC1 = minPhysC1 - b0.raw1;
+    const spaceYPos = mapBounds.maxY - spawnAnchor.y;
+    const spaceYNeg = spawnAnchor.y - mapBounds.minY;
+    const threshold = physExtentY * 0.05;
+
+    scaleY = Infinity;
+    if (relMaxC1 > threshold) scaleY = Math.min(scaleY, spaceYPos / relMaxC1);
+    if (-relMinC1 > threshold) scaleY = Math.min(scaleY, spaceYNeg / (-relMinC1));
+
+    // X constraints: world X = -(physC2 - b0.raw2) * scaleX + spawnAnchor.x
+    const relMaxC2 = maxPhysC2 - b0.raw2;
+    const relMinC2 = minPhysC2 - b0.raw2;
+    const spaceXNeg = spawnAnchor.x - mapBounds.minX;
+    const spaceXPos = mapBounds.maxX - spawnAnchor.x;
+    const thresholdX = physExtentX * 0.05;
+
+    if (relMaxC2 > thresholdX) {
+      scaleY = Math.min(scaleY, spaceXNeg * encodingAspect / relMaxC2);
+    }
+    if (-relMinC2 > thresholdX) {
+      scaleY = Math.min(scaleY, spaceXPos * encodingAspect / (-relMinC2));
+    }
+
+    if (!isFinite(scaleY)) scaleY = DEFAULT_SCALE;
+    scaleX = scaleY / encodingAspect;
+  } else if (mapBounds && mapBounds.width > 0 && physExtentY > 0) {
+    // Fallback: fill-factor approach (no spawn anchor)
     scaleY = (mapBounds.height * MAP_FILL_FACTOR) / physExtentY;
+    scaleX = scaleY / encodingAspect;
   }
 
   // Combined center in world coords (for centering on map)

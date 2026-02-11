@@ -52,6 +52,21 @@ The pipeline has 5 stages, each driven from `src/cli/index.ts`:
 - **Strict TypeScript** — `strict: true` in tsconfig. The build must produce zero errors.
 - **Film binary format** — not publicly documented. Motion extraction relies on reverse-engineered heuristics. Multiple encoding variants exist across different maps (base-0x09 standard, b3-variant, 40088064 fallback).
 
+## Coordinate encoding and scaling
+
+Motion data uses two coordinates with different bit widths:
+- **coord1 (Y axis):** 16-bit encoding (0–65535). Cumulative deltas with ±32768 wraparound.
+- **coord2 (X axis):** 12-bit encoding (0–4095). Cumulative deltas with ±2048 wraparound.
+
+The 16:1 bit-width ratio (`ENCODING_RATIO = 65536/4096`) means one raw coord2 unit covers 16× more world distance than one raw coord1 unit, adjusted for map aspect ratio.
+
+**Scaling approach** (`svg-generator.ts`):
+- **Axis mapping:** cumCoord1 → world Y, cumCoord2 → world X (negated). Do NOT swap these axes — the path shape is correct with this mapping.
+- **Spawn anchoring:** The path's first frame is anchored to the nearest Initial Spawn (`findBestSpawnAnchor` tries each candidate and picks the one that keeps the most path points within map bounds).
+- **Constraint-based scaling (with anchor):** Instead of an arbitrary fill percentage, scaleY is computed as the tightest fit that keeps the entire path within map bounds from the anchor point. Both Y constraints (north/south from anchor) and X constraints (east/west, converted via encoding ratio) are checked. The tightest constraint wins.
+- **Fallback scaling (no anchor):** When no spawn anchor is available, falls back to `MAP_FILL_FACTOR` (85%) of map height for Y, with X derived from Y.
+- **X derived from Y:** `scaleX = scaleY / (ENCODING_RATIO × mapWidth / mapHeight)`. Never calibrate X independently — doing so overstretches the horizontal axis.
+
 ## Reference films
 
 Six pre-downloaded films in `films/` can be re-processed without API access. All played on Aquarius with the human player making a full loop of the map:

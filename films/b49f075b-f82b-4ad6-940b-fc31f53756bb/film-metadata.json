@@ -1,0 +1,70 @@
+{
+  "FilmStatusBond": 1,
+  "CustomData": {
+    "FilmLength": 92655,
+    "Chunks": [
+      {
+        "Index": 0,
+        "ChunkStartTimeOffsetMilliseconds": 0,
+        "DurationMilliseconds": 11,
+        "ChunkSize": 431213,
+        "FileRelativePath": "/filmChunk0",
+        "ChunkType": 1
+      },
+      {
+        "Index": 1,
+        "ChunkStartTimeOffsetMilliseconds": 0,
+        "DurationMilliseconds": 19991,
+        "ChunkSize": 36604,
+        "FileRelativePath": "/filmChunk1",
+        "ChunkType": 2
+      },
+      {
+        "Index": 2,
+        "ChunkStartTimeOffsetMilliseconds": 19992,
+        "DurationMilliseconds": 20003,
+        "ChunkSize": 39247,
+        "FileRelativePath": "/filmChunk2",
+        "ChunkType": 2
+      },
+      {
+        "Index": 3,
+        "ChunkStartTimeOffsetMilliseconds": 39995,
+        "DurationMilliseconds": 20003,
+        "ChunkSize": 46693,
+        "FileRelativePath": "/filmChunk3",
+        "ChunkType": 2
+      },
+      {
+        "Index": 4,
+        "ChunkStartTimeOffsetMilliseconds": 59998,
+        "DurationMilliseconds": 20003,
+        "ChunkSize": 38093,
+        "FileRelativePath": "/filmChunk4",
+        "ChunkType": 2
+      },
+      {
+        "Index": 5,
+        "ChunkStartTimeOffsetMilliseconds": 80002,
+        "DurationMilliseconds": 12643,
+        "ChunkSize": 30959,
+        "FileRelativePath": "/filmChunk5",
+        "ChunkType": 2
+      },
+      {
+        "Index": 6,
+        "ChunkStartTimeOffsetMilliseconds": 92645,
+        "DurationMilliseconds": 1,
+        "ChunkSize": 29,
+        "FileRelativePath": "/filmChunk6",
+        "ChunkType": 3
+      }
+    ],
+    "HasGameEnded": true,
+    "ManifestRefreshSeconds": 30,
+    "MatchId": "b49f075b-f82b-4ad6-940b-fc31f53756bb",
+    "FilmMajorVersion": 41
+  },
+  "BlobStoragePathPrefix": "https://blobs-infiniteugc.svc.halowaypoint.com/ugcstorage/film/c3fbb437-293b-4140-a0d9-e3646ec49f0f/295dd3f9-f7bb-4a78-b6de-c359e68a897b/",
+  "AssetId": "c3fbb437-293b-4140-a0d9-e3646ec49f0f"
+}
