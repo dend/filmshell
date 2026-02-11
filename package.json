@@ -7,7 +7,9 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/cli/index.js",
-    "dev": "tsc && node dist/cli/index.js"
+    "dev": "tsc && node dist/cli/index.js",
+    "viewer": "vite --config vite.config.ts",
+    "viewer:build": "vite build --config vite.config.ts"
   },
   "dependencies": {
     "@dendotdev/conch": "1.0.1",
@@ -15,7 +17,8 @@
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
-    "typescript": "^5.0.0"
+    "typescript": "^5.0.0",
+    "vite": "^7.3.1"
   },
   "engines": {
     "node": ">=18.0.0"

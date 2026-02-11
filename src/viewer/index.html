@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FilmShell — Binary Viewer</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header id="loader">
+    <div id="film-picker">
+      <select id="film-select" disabled>
+        <option value="">Loading films...</option>
+      </select>
+      <span id="film-meta" class="film-meta"></span>
+    </div>
+    <div id="chunk-map" class="hidden"></div>
+  </header>
+
+  <main id="workspace" class="hidden">
+    <div id="hex-pane">
+      <div id="hex-header">
+        <span>Hex Dump</span>
+        <div id="legend">
+          <span class="legend-item"><span class="swatch b-marker">A0</span> Marker</span>
+          <span class="legend-item"><span class="swatch b-tick">00</span> Tick</span>
+          <span class="legend-item"><span class="swatch b-type">40</span> Type</span>
+          <span class="legend-item"><span class="swatch b-format">36</span> Fmt</span>
+          <span class="legend-item"><span class="swatch b-data-pos">41</span> Pos</span>
+          <span class="legend-item"><span class="swatch b-data-state">00</span> State</span>
+          <span class="legend-item"><span class="swatch b-data-ext">00</span> Ext</span>
+        </div>
+      </div>
+      <div id="hex-container"></div>
+    </div>
+    <div id="divider"></div>
+    <div id="table-pane">
+      <div id="table-header">
+        <span>Frames</span>
+        <div id="filters">
+          <select id="filter-player"><option value="">Player</option></select>
+          <select id="filter-base"><option value="">Base</option></select>
+          <input id="filter-subtype" type="text" placeholder="Subtype" />
+          <select id="filter-d0hnib"><option value="">d0 hnib</option></select>
+        </div>
+      </div>
+      <div id="frame-table-container"></div>
+    </div>
+  </main>
+
+  <footer id="status-bar">
+    <span id="status-text">Select a film to begin</span>
+  </footer>
+
+  <div id="tooltip" class="hidden"></div>
+
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

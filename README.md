@@ -27,6 +27,7 @@ FilmShell connects to the Halo Infinite API, downloads theater film data, and tu
 - [Object IDs](#object-ids)
 - [Reference films](#reference-films)
 - [How it works](#how-it-works)
+- [Binary viewer](#binary-viewer)
 - [License](#license)
 - [Acknowledgements](#acknowledgements)
 
@@ -169,6 +170,22 @@ Each film directory contains the decompressed film chunks, match/film metadata, 
 3. **Map metadata** - Fetches the map variant (MVAR) asset, parses the Bond Compact Binary v2 format, and extracts object placements (spawn points, weapons, objectives) with world coordinates.
 4. **Motion extraction** - Scans film chunk binaries for frame markers (`A0 7B 42`), auto-detects the position encoding variant per player, and accumulates coordinate deltas into movement paths. Supports multiple encoding formats across different maps.
 5. **SVG generation** - Scales motion data to world coordinates using map bounds, anchors paths to detected spawn positions, and renders per-player movement trails with map object overlays.
+
+## Binary viewer
+
+The repository includes a browser-based binary viewer for inspecting raw film data. It is intended as a reverse-engineering tool to help map frame fields and discover new patterns.
+
+```sh
+npm run viewer        # launch dev server
+npm run viewer:build  # production build to dist/viewer/
+```
+
+The viewer provides:
+- A **hex dump** with color-coded bytes by field type (marker, tick, frame type, format byte, position data, state data, extended data)
+- A **frame table** with filtering by player, base type, subtype, and d0 high nibble
+- **Bidirectional linking** — click a frame in either view to highlight it in both
+- A **chunk map** showing relative chunk sizes with click-to-navigate
+- Frame boundary markers in the hex view
 
 ## License
 
