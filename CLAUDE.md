@@ -69,7 +69,7 @@ The 16:1 bit-width ratio (`ENCODING_RATIO = 65536/4096`) means one raw coord2 un
 
 ## Reference films
 
-Six pre-downloaded films in `films/` can be re-processed without API access. All played on Aquarius with the human player making a full loop of the map:
+Seven pre-downloaded films in `films/` can be re-processed without API access. The first six are played on Aquarius with the human player making a full loop of the map. The seventh is a solo combat test on Aquarius with AR fire at the south spawn and Sidekick fire at the north spawn:
 
 ```sh
 npm start -- --match-id 53a98da9-718d-4374-b739-b0ee2e7033ba
