@@ -5,7 +5,7 @@
 import type { ParsedFrame } from './film-parser.ts';
 
 const ROW_HEIGHT = 20;
-const OVERSCAN = 15;
+const OVERSCAN = 10;
 
 type SortKey = keyof ParsedFrame | 'd0hnib';
 type SortDir = 'asc' | 'desc';
@@ -15,6 +15,7 @@ export interface Filters {
   base: number | null;
   subtype: string;
   d0hnib: number | null;
+  posOnly: boolean;
 }
 
 interface Column {
@@ -44,6 +45,15 @@ const COLUMNS: Column[] = [
   { key: 'd0hnib', label: 'hnib', cssClass: 'col-hnib', format: f => String(f.dataBytes[0] >> 4) },
 ];
 
+/** Pre-render a row's inner HTML from a frame. */
+function rowHTML(frame: ParsedFrame): string {
+  let h = '';
+  for (const col of COLUMNS) {
+    h += `<span class="col ${col.cssClass}">${col.format(frame)}</span>`;
+  }
+  return h;
+}
+
 export class FrameTable {
   private container: HTMLElement;
   private allFrames: ParsedFrame[] = [];
@@ -57,9 +67,10 @@ export class FrameTable {
   private scrollContainer: HTMLElement;
   private spacerTop: HTMLElement;
   private spacerBottom: HTMLElement;
-  private rowPool: HTMLElement[] = [];
+  private rowMap = new Map<number, HTMLElement>(); // filteredIdx → element
   private visibleStart = -1;
   private visibleEnd = -1;
+  private rafId = 0;
 
   constructor(container: HTMLElement, onFrameClick: (frameIndex: number) => void) {
     this.container = container;
@@ -94,20 +105,35 @@ export class FrameTable {
     this.scrollContainer.appendChild(this.spacerBottom);
     this.container.appendChild(this.scrollContainer);
 
-    this.scrollContainer.addEventListener('scroll', () => this.render());
+    // Delegated click handler — one listener instead of per-row
+    this.scrollContainer.addEventListener('click', (e) => {
+      const row = (e.target as HTMLElement).closest('.frame-row') as HTMLElement | null;
+      if (row?.dataset.frameIndex) {
+        this.onFrameClick(parseInt(row.dataset.frameIndex, 10));
+      }
+    });
+
+    this.scrollContainer.addEventListener('scroll', () => {
+      if (this.rafId) return;
+      this.rafId = requestAnimationFrame(() => {
+        this.rafId = 0;
+        this.render();
+      });
+    });
   }
 
-  setFrames(frames: ParsedFrame[]): void {
+  setFrames(frames: ParsedFrame[], filters?: Filters): void {
     this.allFrames = frames;
-    this.applyFilter({ player: null, base: null, subtype: '', d0hnib: null });
+    this.applyFilter(filters ?? { player: null, base: null, subtype: '', d0hnib: null, posOnly: false });
   }
 
   applyFilter(filters: Filters): void {
     this.filtered = this.allFrames.filter(f => {
-      if (filters.player !== null && f.playerIndex !== filters.player) return false;
+      if (filters.player !== null && (!f.hasPlayer || f.playerIndex !== filters.player)) return false;
       if (filters.base !== null && f.baseType !== filters.base) return false;
       if (filters.subtype && !f.subtypeHex.includes(filters.subtype.toLowerCase())) return false;
       if (filters.d0hnib !== null && (f.dataBytes[0] >> 4) !== filters.d0hnib) return false;
+      if (filters.posOnly && !f.isPositionFrame) return false;
       return true;
     });
     this.applySortToFiltered();
@@ -127,13 +153,12 @@ export class FrameTable {
     this.scrollContainer.scrollTop = targetRow * ROW_HEIGHT;
   }
 
-  /** Get unique values for filter dropdowns. */
   getFilterOptions(): { players: number[]; bases: number[]; d0hnibs: number[] } {
     const players = new Set<number>();
     const bases = new Set<number>();
     const d0hnibs = new Set<number>();
     for (const f of this.allFrames) {
-      players.add(f.playerIndex);
+      if (f.hasPlayer) players.add(f.playerIndex);
       bases.add(f.baseType);
       d0hnibs.add(f.dataBytes[0] >> 4);
     }
@@ -188,7 +213,6 @@ export class FrameTable {
         av = a.coord2 ?? -1;
         bv = b.coord2 ?? -1;
       } else if (key === 'dataBytes' as SortKey) {
-        // Sort by d0
         av = a.dataBytes[0];
         bv = b.dataBytes[0];
       } else {
@@ -203,8 +227,8 @@ export class FrameTable {
   private resetView(): void {
     this.visibleStart = -1;
     this.visibleEnd = -1;
-    for (const el of this.rowPool) el.remove();
-    this.rowPool = [];
+    for (const el of this.rowMap.values()) el.remove();
+    this.rowMap.clear();
     this.render();
   }
 
@@ -221,27 +245,25 @@ export class FrameTable {
     this.spacerTop.style.height = firstVisible * ROW_HEIGHT + 'px';
     this.spacerBottom.style.height = Math.max(0, (totalRows - lastVisible - 1) * ROW_HEIGHT) + 'px';
 
-    // Remove out-of-range rows
-    const toRemove: HTMLElement[] = [];
-    for (const el of this.rowPool) {
-      const idx = parseInt(el.dataset.filteredIdx!, 10);
-      if (idx < firstVisible || idx > lastVisible) toRemove.push(el);
-    }
-    for (const el of toRemove) {
-      el.remove();
-      this.rowPool.splice(this.rowPool.indexOf(el), 1);
-    }
-
-    const existing = new Set(this.rowPool.map(el => parseInt(el.dataset.filteredIdx!, 10)));
+    // Clear all existing rows and rebuild the visible range.
+    // With innerHTML-based row creation, ~50 rows is trivially fast.
+    for (const el of this.rowMap.values()) el.remove();
+    this.rowMap.clear();
 
     const fragment = document.createDocumentFragment();
     for (let i = firstVisible; i <= lastVisible; i++) {
-      if (existing.has(i)) continue;
       const frame = this.filtered[i];
       if (!frame) continue;
-      const el = this.createRow(frame, i);
-      fragment.appendChild(el);
-      this.rowPool.push(el);
+
+      const row = document.createElement('div');
+      row.className = frame.hasPlayer ? `frame-row player-${frame.playerIndex}` : 'frame-row';
+      if (frame.index === this.selectedFrameIndex) row.className += ' selected';
+      row.dataset.filteredIdx = String(i);
+      row.dataset.frameIndex = String(frame.index);
+      row.innerHTML = rowHTML(frame);
+
+      fragment.appendChild(row);
+      this.rowMap.set(i, row);
     }
 
     this.scrollContainer.insertBefore(fragment, this.spacerBottom);
@@ -249,31 +271,8 @@ export class FrameTable {
     this.visibleEnd = lastVisible;
   }
 
-  private createRow(frame: ParsedFrame, filteredIdx: number): HTMLElement {
-    const row = document.createElement('div');
-    row.className = `frame-row player-${frame.playerIndex}`;
-    if (frame.index === this.selectedFrameIndex) {
-      row.classList.add('selected');
-    }
-    row.dataset.filteredIdx = String(filteredIdx);
-    row.dataset.frameIndex = String(frame.index);
-
-    for (const col of COLUMNS) {
-      const cell = document.createElement('span');
-      cell.className = `col ${col.cssClass}`;
-      cell.textContent = col.format(frame);
-      row.appendChild(cell);
-    }
-
-    row.addEventListener('click', () => {
-      this.onFrameClick(frame.index);
-    });
-
-    return row;
-  }
-
   private refreshVisible(): void {
-    for (const el of this.rowPool) {
+    for (const el of this.rowMap.values()) {
       const frameIndex = parseInt(el.dataset.frameIndex!, 10);
       if (frameIndex === this.selectedFrameIndex) {
         el.classList.add('selected');

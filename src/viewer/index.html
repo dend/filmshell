@@ -22,13 +22,13 @@
       <div id="hex-header">
         <span>Hex Dump</span>
         <div id="legend">
-          <span class="legend-item"><span class="swatch b-marker">A0</span> Marker</span>
-          <span class="legend-item"><span class="swatch b-tick">00</span> Tick</span>
-          <span class="legend-item"><span class="swatch b-type">40</span> Type</span>
-          <span class="legend-item"><span class="swatch b-format">36</span> Fmt</span>
-          <span class="legend-item"><span class="swatch b-data-pos">41</span> Pos</span>
-          <span class="legend-item"><span class="swatch b-data-state">00</span> State</span>
-          <span class="legend-item"><span class="swatch b-data-ext">00</span> Ext</span>
+          <span class="legend-item"><span class="swatch" style="background:var(--color-marker)"></span>Marker</span>
+          <span class="legend-item"><span class="swatch" style="background:var(--color-tick)"></span>Tick</span>
+          <span class="legend-item"><span class="swatch" style="background:var(--color-type)"></span>Type</span>
+          <span class="legend-item"><span class="swatch" style="background:var(--color-format)"></span>Fmt</span>
+          <span class="legend-item"><span class="swatch" style="background:var(--color-data-pos)"></span>Pos</span>
+          <span class="legend-item"><span class="swatch" style="background:var(--color-data-state)"></span>State</span>
+          <span class="legend-item"><span class="swatch" style="background:var(--color-data-ext)"></span>Ext</span>
         </div>
       </div>
       <div id="hex-container"></div>
@@ -42,8 +42,10 @@
           <select id="filter-base"><option value="">Base</option></select>
           <input id="filter-subtype" type="text" placeholder="Subtype" />
           <select id="filter-d0hnib"><option value="">d0 hnib</option></select>
+          <button id="filter-pos-only" class="filter-btn" type="button">Pos only</button>
         </div>
       </div>
+      <div id="player-stats" class="hidden"></div>
       <div id="frame-table-container"></div>
     </div>
   </main>

@@ -19,6 +19,7 @@ export interface ParsedFrame {
   frameTypeHex: string;
   subtypeHex: string;
   isPositionFrame: boolean;
+  hasPlayer: boolean;
   coord1?: number;
   coord2?: number;
 }
@@ -97,6 +98,7 @@ export function parseFrames(data: Uint8Array, chunkOffsets: number[]): ParsedFra
 
     const d0HiNib = dataBytes[0] >> 4;
     const isPositionFrame = byte5 === 0x40 && baseType === 0x09 && d0HiNib === 4;
+    const hasPlayer = byte5 === 0x40 && (baseType === 0x09 || baseType === 0x08);
 
     let coord1: number | undefined;
     let coord2: number | undefined;
@@ -121,6 +123,7 @@ export function parseFrames(data: Uint8Array, chunkOffsets: number[]): ParsedFra
       frameTypeHex,
       subtypeHex,
       isPositionFrame,
+      hasPlayer,
       coord1,
       coord2,
     });

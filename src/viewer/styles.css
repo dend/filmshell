@@ -133,6 +133,7 @@ main#workspace {
 
 #hex-header, #table-header {
   padding: 6px 12px;
+  min-height: 32px;
   background: var(--bg-surface);
   border-bottom: 1px solid var(--border);
   font-size: 11px;
@@ -148,6 +149,7 @@ main#workspace {
 #legend {
   display: flex;
   gap: 10px;
+  align-items: center;
   text-transform: none;
   letter-spacing: 0;
 }
@@ -155,16 +157,16 @@ main#workspace {
 .legend-item {
   display: flex;
   align-items: center;
-  gap: 3px;
+  gap: 4px;
   font-size: 10px;
   color: var(--text-dim);
 }
 
 .swatch {
-  font-size: 10px;
-  padding: 0 3px;
+  width: 8px;
+  height: 8px;
   border-radius: 2px;
-  font-weight: bold;
+  flex-shrink: 0;
 }
 
 #hex-container {
@@ -195,13 +197,92 @@ main#workspace {
   min-width: 300px;
 }
 
+/* Player stats */
+#player-stats {
+  display: flex;
+  flex-shrink: 0;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg);
+}
+
+.player-stat {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 10px;
+  font-size: 11px;
+  border-right: 1px solid var(--border);
+}
+
+.player-stat:last-child {
+  border-right: none;
+}
+
+.player-stat .player-color {
+  width: 4px;
+  height: 22px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.player-stat .player-label {
+  color: var(--text-bright);
+  font-weight: bold;
+  font-size: 11px;
+}
+
+.player-stat .player-count {
+  color: var(--text-dim);
+  font-size: 10px;
+}
+
+.player-stat .player-bar {
+  flex: 1;
+  height: 4px;
+  background: var(--bg-surface);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.player-stat .player-bar-fill {
+  height: 100%;
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
 #filters {
   display: flex;
   gap: 6px;
   align-items: center;
 }
 
-#filters select, #filters input {
+.filter-btn {
+  background: var(--bg);
+  color: var(--text-dim);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 2px 6px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  cursor: pointer;
+  white-space: nowrap;
+  outline: none;
+  transition: border-color 0.12s, color 0.12s, background 0.12s;
+}
+
+.filter-btn:hover {
+  border-color: var(--text-dim);
+  color: var(--text);
+}
+
+.filter-btn.active {
+  border-color: var(--color-data-pos);
+  color: var(--color-data-pos);
+  background: rgba(105, 240, 174, 0.08);
+}
+
+#filters select, #filters input[type="text"] {
   background: var(--bg);
   color: var(--text);
   border: 1px solid var(--border);

@@ -26,6 +26,7 @@ const filmMeta = document.getElementById('film-meta')!;
 const chunkMapEl = document.getElementById('chunk-map')!;
 const workspace = document.getElementById('workspace')!;
 const hexContainer = document.getElementById('hex-container')!;
+const playerStatsEl = document.getElementById('player-stats')!;
 const tableContainer = document.getElementById('frame-table-container')!;
 const statusText = document.getElementById('status-text')!;
 const tooltipEl = document.getElementById('tooltip')!;
@@ -35,6 +36,7 @@ const filterPlayer = document.getElementById('filter-player') as HTMLSelectEleme
 const filterBase = document.getElementById('filter-base') as HTMLSelectElement;
 const filterSubtype = document.getElementById('filter-subtype') as HTMLInputElement;
 const filterD0hnib = document.getElementById('filter-d0hnib') as HTMLSelectElement;
+const filterPosOnly = document.getElementById('filter-pos-only') as HTMLButtonElement;
 
 // ── State ──
 
@@ -175,13 +177,46 @@ function renderChunkMap(totalSize: number): void {
   }
 }
 
+// ── Player Stats ──
+
+const PLAYER_COLORS = [
+  '#4fc3f7', '#f06292', '#aed581', '#ffb74d',
+  '#ba68c8', '#4dd0e1', '#e57373', '#81c784',
+];
+
+function renderPlayerStats(players: [number, number][]): void {
+  playerStatsEl.innerHTML = '';
+  playerStatsEl.classList.remove('hidden');
+
+  const maxCount = Math.max(...players.map(([, n]) => n));
+
+  for (const [playerIdx, count] of players) {
+    const color = PLAYER_COLORS[playerIdx % PLAYER_COLORS.length];
+    const pct = (count / maxCount) * 100;
+
+    const stat = document.createElement('div');
+    stat.className = 'player-stat';
+    stat.innerHTML =
+      `<div class="player-color" style="background:${color}"></div>` +
+      `<span class="player-label">P${playerIdx}</span>` +
+      `<div class="player-bar"><div class="player-bar-fill" style="width:${pct}%;background:${color}"></div></div>` +
+      `<span class="player-count">${count}</span>`;
+
+    stat.addEventListener('click', () => {
+      filterPlayer.value = String(playerIdx);
+      filterPlayer.dispatchEvent(new Event('change'));
+    });
+    stat.style.cursor = 'pointer';
+
+    playerStatsEl.appendChild(stat);
+  }
+}
+
 function processData(): void {
   if (!allData) return;
 
   frames = parseFrames(allData, chunkOffsets);
   const fieldMap = buildFieldMap(allData, frames);
-
-  populateFilters();
 
   hexView.setState({
     data: allData,
@@ -191,13 +226,33 @@ function processData(): void {
     selectedFrameIndex: null,
   });
 
-  frameTable.setFrames(frames);
+  frameTable.setFrames(frames, getFilters());
+  populateFilters();
   workspace.classList.remove('hidden');
+
+  // Player breakdown — only count frames where playerIndex is meaningful
+  // (byte5=0x40 with baseType 0x09 or 0x08, matching CLI detectPlayers logic)
+  const playerCounts = new Map<number, number>();
+  for (const f of frames) {
+    if (f.byte5 === 0x40 && (f.baseType === 0x09 || f.baseType === 0x08)) {
+      playerCounts.set(f.playerIndex, (playerCounts.get(f.playerIndex) || 0) + 1);
+    }
+  }
+  const players = [...playerCounts.entries()].sort((a, b) => a[0] - b[0]);
+
+  filmMeta.textContent += ` | ${frames.length} frames | ${players.length} player${players.length !== 1 ? 's' : ''}`;
   statusText.textContent = `${frames.length} frames parsed from ${chunkOffsets.length} chunks`;
+
+  renderPlayerStats(players);
 }
 
 function populateFilters(): void {
   const opts = frameTable.getFilterOptions();
+
+  // Save current selections
+  const prevPlayer = filterPlayer.value;
+  const prevBase = filterBase.value;
+  const prevD0hnib = filterD0hnib.value;
 
   filterPlayer.innerHTML = '<option value="">Player</option>';
   for (const p of opts.players) {
@@ -222,6 +277,11 @@ function populateFilters(): void {
     opt.textContent = String(h);
     filterD0hnib.appendChild(opt);
   }
+
+  // Restore selections (if the value still exists in the new options)
+  filterPlayer.value = prevPlayer;
+  filterBase.value = prevBase;
+  filterD0hnib.value = prevD0hnib;
 }
 
 function getFilters(): Filters {
@@ -230,6 +290,7 @@ function getFilters(): Filters {
     base: filterBase.value ? parseInt(filterBase.value, 10) : null,
     subtype: filterSubtype.value.trim(),
     d0hnib: filterD0hnib.value !== '' ? parseInt(filterD0hnib.value, 10) : null,
+    posOnly: filterPosOnly.classList.contains('active'),
   };
 }
 
@@ -298,6 +359,10 @@ filterPlayer.addEventListener('change', () => frameTable.applyFilter(getFilters(
 filterBase.addEventListener('change', () => frameTable.applyFilter(getFilters()));
 filterSubtype.addEventListener('input', () => frameTable.applyFilter(getFilters()));
 filterD0hnib.addEventListener('change', () => frameTable.applyFilter(getFilters()));
+filterPosOnly.addEventListener('click', () => {
+  filterPosOnly.classList.toggle('active');
+  frameTable.applyFilter(getFilters());
+});
 
 // ── Util ──
 
