@@ -54,6 +54,7 @@ export class HexView {
   private visibleEnd = -1;
   private chunkBoundaryRows = new Set<number>();
   private frameBoundaryRows = new Set<number>();
+  private fireHighlights = new Set<number>();
 
   constructor(container: HTMLElement, callbacks: HexViewCallbacks) {
     this.container = container;
@@ -95,6 +96,11 @@ export class HexView {
   updateSelection(selectedFrameIndex: number | null): void {
     if (!this.state) return;
     this.state.selectedFrameIndex = selectedFrameIndex;
+    this.refreshSelection();
+  }
+
+  setFireHighlights(offsets: Set<number>): void {
+    this.fireHighlights = offsets;
     this.refreshSelection();
   }
 
@@ -213,6 +219,11 @@ export class HexView {
           if (frame && i >= frame.offset && i < frame.offset + 20) {
             byteEl.classList.add('frame-selected');
           }
+        }
+
+        // Fire event highlight (additive overlay)
+        if (this.fireHighlights.has(i)) {
+          byteEl.classList.add('b-fire');
         }
 
         byteEl.addEventListener('click', () => {

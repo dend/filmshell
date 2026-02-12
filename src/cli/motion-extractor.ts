@@ -36,8 +36,10 @@ function buildFrameTypeHex(baseHex: string, playerIndex: number): string {
  * Detect all players present in the film by scanning frame types.
  * Returns a sorted array of player indices found (e.g., [0] for single player, [0, 1] for two).
  */
+const MIN_PLAYER_FRAMES = 10;
+
 function detectPlayers(chunks: Buffer[]): number[] {
-  const playerSet = new Set<number>();
+  const playerCounts = new Map<number, number>();
 
   for (const chunk of chunks) {
     const markers = findMarkers(chunk);
@@ -48,12 +50,17 @@ function detectPlayers(chunks: Buffer[]): number[] {
       // Only look at motion frame types (base 0x09 for XX0005, base 0x08 for XX8064)
       const base = getBaseType(b1);
       if (b0 === 0x40 && (base === 0x09 || base === 0x08)) {
-        playerSet.add(getPlayerIndex(b1));
+        const pi = getPlayerIndex(b1);
+        playerCounts.set(pi, (playerCounts.get(pi) || 0) + 1);
       }
     }
   }
 
-  return [...playerSet].sort((a, b) => a - b);
+  // Filter out spurious player indices with very few frames (noise)
+  return [...playerCounts.entries()]
+    .filter(([, count]) => count >= MIN_PLAYER_FRAMES)
+    .map(([pi]) => pi)
+    .sort((a, b) => a - b);
 }
 
 /**

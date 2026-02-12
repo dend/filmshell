@@ -5,6 +5,7 @@
 import { parseFrames, buildFieldMap, frameAtOffset, type ParsedFrame } from './film-parser.ts';
 import { HexView } from './hex-view.ts';
 import { FrameTable, type Filters } from './frame-table.ts';
+import { scanFireEvents, type FireScanResult } from './fire-scanner.ts';
 
 // ── Types ──
 
@@ -27,6 +28,7 @@ const chunkMapEl = document.getElementById('chunk-map')!;
 const workspace = document.getElementById('workspace')!;
 const hexContainer = document.getElementById('hex-container')!;
 const playerStatsEl = document.getElementById('player-stats')!;
+const fireStatsEl = document.getElementById('fire-stats')!;
 const tableContainer = document.getElementById('frame-table-container')!;
 const statusText = document.getElementById('status-text')!;
 const tooltipEl = document.getElementById('tooltip')!;
@@ -47,6 +49,9 @@ let chunkSizes: number[] = [];
 let frames: ParsedFrame[] = [];
 let selectedFrameIndex: number | null = null;
 let activeMatchId: string | null = null;
+let fireResult: FireScanResult | null = null;
+let activeWeapon: string | null = null;
+let activeFireEventIndex: number | null = null;
 
 // ── Components ──
 
@@ -218,6 +223,10 @@ function processData(): void {
   frames = parseFrames(allData, chunkOffsets);
   const fieldMap = buildFieldMap(allData, frames);
 
+  // Unhide workspace BEFORE populating virtual-scroll views so containers
+  // have real dimensions (clientHeight > 0) for visible-range calculation.
+  workspace.classList.remove('hidden');
+
   hexView.setState({
     data: allData,
     fieldMap,
@@ -228,7 +237,6 @@ function processData(): void {
 
   frameTable.setFrames(frames, getFilters());
   populateFilters();
-  workspace.classList.remove('hidden');
 
   // Player breakdown — only count frames where playerIndex is meaningful
   // (byte5=0x40 with baseType 0x09 or 0x08, matching CLI detectPlayers logic)
@@ -238,12 +246,21 @@ function processData(): void {
       playerCounts.set(f.playerIndex, (playerCounts.get(f.playerIndex) || 0) + 1);
     }
   }
-  const players = [...playerCounts.entries()].sort((a, b) => a[0] - b[0]);
+  // Filter out spurious player indices with very few frames (noise in PvE films)
+  const players = [...playerCounts.entries()]
+    .filter(([, count]) => count >= 10)
+    .sort((a, b) => a[0] - b[0]);
 
   filmMeta.textContent += ` | ${frames.length} frames | ${players.length} player${players.length !== 1 ? 's' : ''}`;
   statusText.textContent = `${frames.length} frames parsed from ${chunkOffsets.length} chunks`;
 
   renderPlayerStats(players);
+
+  // Scan for fire events
+  activeWeapon = null;
+  activeFireEventIndex = null;
+  fireResult = scanFireEvents(allData, chunkOffsets);
+  renderFireStats(fireResult);
 }
 
 function populateFilters(): void {
@@ -380,6 +397,144 @@ function parseDuration(iso: string): string {
   const sec = m[3] ? Math.round(parseFloat(m[3])) : 0;
   if (h) return `${h}h${min}m`;
   return `${min}m${sec}s`;
+}
+
+// ── Fire Stats ──
+
+const WEAPON_COLORS: Record<string, string> = {
+  'MA40 AR': '#4fc3f7',
+  'Mk51 Sidekick': '#f06292',
+  'BR75': '#aed581',
+  'M392 Bandit': '#ffb74d',
+  'VK78 Commando': '#ba68c8',
+  'S7 Sniper': '#e57373',
+  'CQS48 Bulldog': '#81c784',
+  'M41 SPNKr': '#ff8a65',
+  'Needler': '#4dd0e1',
+};
+
+function renderFireStats(result: FireScanResult): void {
+  fireStatsEl.innerHTML = '';
+  // Remove any existing event list
+  document.getElementById('fire-event-list')?.remove();
+
+  if (result.events.length === 0) {
+    fireStatsEl.classList.add('hidden');
+    return;
+  }
+
+  fireStatsEl.classList.remove('hidden');
+
+  // Weapon count chips (clickable toggles)
+  const counts = [...result.weaponCounts.entries()].sort((a, b) => b[1] - a[1]);
+  for (const [name, count] of counts) {
+    const chip = document.createElement('div');
+    chip.className = 'fire-chip' + (activeWeapon === name ? ' active' : '');
+    const color = WEAPON_COLORS[name] || '#9e9e9e';
+    chip.innerHTML =
+      `<div class="fire-chip-color" style="background:${color}"></div>` +
+      `<span class="fire-chip-label">${name}</span>` +
+      `<span class="fire-chip-count">${count}</span>`;
+
+    chip.addEventListener('click', () => {
+      selectWeapon(activeWeapon === name ? null : name);
+    });
+
+    fireStatsEl.appendChild(chip);
+  }
+
+  // 3D link
+  if (activeMatchId) {
+    const link = document.createElement('a');
+    link.className = 'fire-aim-link';
+    link.href = `/aim?matchId=${activeMatchId}`;
+    link.textContent = `View Aim Vectors (3D)`;
+    link.title = `${result.events.length} fire events`;
+    fireStatsEl.appendChild(link);
+  }
+}
+
+const FIRE_EVENT_BYTES = 17;
+
+function selectWeapon(name: string | null): void {
+  activeWeapon = name;
+  activeFireEventIndex = null;
+
+  // Re-render chips to update active state
+  if (fireResult) renderFireStats(fireResult);
+
+  if (!name || !fireResult) {
+    hexView.setFireHighlights(new Set());
+    document.getElementById('fire-event-list')?.remove();
+    statusText.textContent = `${frames.length} frames parsed from ${chunkOffsets.length} chunks`;
+    return;
+  }
+
+  // Build highlight set: 17 bytes per event
+  const events = fireResult.events.filter(e => e.weaponName === name);
+  const offsets = new Set<number>();
+  for (const ev of events) {
+    for (let b = 0; b < FIRE_EVENT_BYTES; b++) {
+      offsets.add(ev.offset + b);
+    }
+  }
+  hexView.setFireHighlights(offsets);
+
+  renderFireEventList(events);
+
+  // Scroll to first event
+  if (events.length > 0) {
+    selectFireEvent(0, events);
+  }
+}
+
+function renderFireEventList(events: import('./fire-scanner.ts').FireEvent[]): void {
+  document.getElementById('fire-event-list')?.remove();
+
+  const list = document.createElement('div');
+  list.id = 'fire-event-list';
+
+  for (let i = 0; i < events.length; i++) {
+    const ev = events[i];
+    const chip = document.createElement('div');
+    chip.className = 'fire-event' + (activeFireEventIndex === i ? ' active' : '');
+    const hexOffset = ev.offset.toString(16).padStart(6, '0');
+    chip.textContent = `#${i + 1} C${ev.chunkIndex} 0x${hexOffset}`;
+    chip.title = `Slot ${ev.slot === 1 ? 'primary' : 'secondary'} | Counter ${ev.counter}`;
+
+    chip.addEventListener('click', () => {
+      selectFireEvent(i, events);
+    });
+
+    list.appendChild(chip);
+  }
+
+  // Insert after fire-stats
+  fireStatsEl.after(list);
+}
+
+function selectFireEvent(index: number, events: import('./fire-scanner.ts').FireEvent[]): void {
+  activeFireEventIndex = index;
+  const ev = events[index];
+
+  hexView.scrollToOffset(ev.offset);
+
+  // Update active state on event chips
+  const list = document.getElementById('fire-event-list');
+  if (list) {
+    const chips = list.children;
+    for (let i = 0; i < chips.length; i++) {
+      chips[i].classList.toggle('active', i === index);
+    }
+    // Scroll the active chip into view
+    (chips[index] as HTMLElement)?.scrollIntoView({ block: 'nearest', inline: 'center' });
+  }
+
+  const hexOffset = ev.offset.toString(16).padStart(6, '0');
+  statusText.textContent =
+    `Fire #${index + 1}/${events.length} | ${ev.weaponName} | ` +
+    `Chunk ${ev.chunkIndex} @ 0x${hexOffset} | ` +
+    `Slot ${ev.slot === 1 ? 'primary' : 'secondary'} | Counter ${ev.counter}`;
 }
 
 // ── Init ──

@@ -386,6 +386,13 @@ main#workspace {
   outline: 1px solid var(--color-selected);
 }
 
+/* Fire event highlight in hex */
+.hex-byte.b-fire {
+  color: #ff5252;
+  font-weight: bold;
+  background: rgba(255, 82, 82, 0.12);
+}
+
 /* Frame table */
 .frame-table-header {
   display: flex;
@@ -514,6 +521,111 @@ main#workspace {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--text-dim);
+}
+
+/* Fire stats bar */
+#fire-stats {
+  display: flex;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 10px;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg);
+}
+
+.fire-chip {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  font-size: 10px;
+  cursor: pointer;
+  transition: border-color 0.12s, background 0.12s;
+}
+
+.fire-chip:hover {
+  border-color: var(--text-dim);
+}
+
+.fire-chip.active {
+  border-color: var(--color-marker);
+  background: rgba(0, 229, 255, 0.1);
+}
+
+.fire-chip-color {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.fire-chip-label {
+  color: var(--text);
+}
+
+.fire-chip-count {
+  color: var(--text-dim);
+  font-weight: bold;
+}
+
+.fire-aim-link {
+  margin-left: auto;
+  color: var(--color-marker);
+  text-decoration: none;
+  font-size: 11px;
+  padding: 2px 8px;
+  border: 1px solid var(--color-marker);
+  border-radius: 3px;
+  transition: background 0.12s, color 0.12s;
+}
+
+.fire-aim-link:hover {
+  background: rgba(0, 229, 255, 0.1);
+}
+
+/* Fire event list (scrollable row of event chips) */
+#fire-event-list {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  overflow-x: auto;
+  overflow-y: hidden;
+  flex-shrink: 0;
+  padding: 4px 10px;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg);
+  max-height: 30px;
+}
+
+.fire-event {
+  display: flex;
+  align-items: center;
+  padding: 1px 6px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  font-size: 10px;
+  color: var(--text-dim);
+  cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: border-color 0.12s, color 0.12s;
+}
+
+.fire-event:hover {
+  border-color: var(--text-dim);
+  color: var(--text);
+}
+
+.fire-event.active {
+  border-color: #ff5252;
+  color: #ff5252;
+  background: rgba(255, 82, 82, 0.1);
 }
 
 /* Virtual scroll spacer */

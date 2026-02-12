@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FilmShell — 3D Aim Vectors</title>
+  <link rel="stylesheet" href="./aim-styles.css" />
+</head>
+<body>
+  <header id="aim-header">
+    <a href="/" class="back-link">&larr; Viewer</a>
+    <span id="aim-title">3D Aim Vectors</span>
+    <span id="aim-meta" class="meta"></span>
+  </header>
+
+  <div id="controls">
+    <label>
+      <input type="checkbox" id="toggle-objects" checked />
+      Map Objects
+    </label>
+    <label>
+      <input type="checkbox" id="toggle-paths" checked />
+      Player Path
+    </label>
+    <label>
+      Ray Length
+      <input type="range" id="ray-length" min="1" max="50" value="10" />
+      <span id="ray-length-val">10</span>
+    </label>
+    <label>
+      Weapon
+      <select id="weapon-filter">
+        <option value="">All</option>
+      </select>
+    </label>
+    <span id="event-count" class="meta"></span>
+  </div>
+
+  <div id="scene-container"></div>
+
+  <footer id="aim-status">
+    <span id="aim-status-text">Loading...</span>
+  </footer>
+
+  <script type="module" src="./aim-main.ts"></script>
+</body>
+</html>

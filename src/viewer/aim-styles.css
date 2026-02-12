@@ -1,0 +1,122 @@
+:root {
+  --bg: #0d1117;
+  --bg-surface: #161b22;
+  --border: #30363d;
+  --text: #c9d1d9;
+  --text-dim: #6e7681;
+  --text-bright: #f0f6fc;
+  --color-marker: #00e5ff;
+  --font-mono: 'Cascadia Code', 'Fira Code', 'JetBrains Mono', 'Consolas', monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#aim-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 8px 16px;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-surface);
+  flex-shrink: 0;
+}
+
+.back-link {
+  color: var(--color-marker);
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+#aim-title {
+  color: var(--text-bright);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.meta {
+  color: var(--text-dim);
+  font-size: 11px;
+}
+
+#controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 6px 16px;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg);
+  flex-shrink: 0;
+  font-size: 11px;
+}
+
+#controls label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--text-dim);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+#controls input[type="checkbox"] {
+  accent-color: var(--color-marker);
+}
+
+#controls input[type="range"] {
+  width: 80px;
+  accent-color: var(--color-marker);
+}
+
+#controls select {
+  background: var(--bg-surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 2px 4px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  outline: none;
+}
+
+#controls select:focus {
+  border-color: var(--color-marker);
+}
+
+#scene-container {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+#scene-container canvas {
+  display: block;
+}
+
+#aim-status {
+  padding: 4px 12px;
+  background: var(--bg-surface);
+  border-top: 1px solid var(--border);
+  font-size: 11px;
+  color: var(--text-dim);
+  flex-shrink: 0;
+  min-height: 24px;
+}

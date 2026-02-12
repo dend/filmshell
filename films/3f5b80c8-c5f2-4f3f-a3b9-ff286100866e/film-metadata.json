@@ -1,0 +1,78 @@
+{
+  "FilmStatusBond": 1,
+  "CustomData": {
+    "FilmLength": 109217,
+    "Chunks": [
+      {
+        "Index": 0,
+        "ChunkStartTimeOffsetMilliseconds": 0,
+        "DurationMilliseconds": 12,
+        "ChunkSize": 431392,
+        "FileRelativePath": "/filmChunk0",
+        "ChunkType": 1
+      },
+      {
+        "Index": 1,
+        "ChunkStartTimeOffsetMilliseconds": 0,
+        "DurationMilliseconds": 19965,
+        "ChunkSize": 43272,
+        "FileRelativePath": "/filmChunk1",
+        "ChunkType": 2
+      },
+      {
+        "Index": 2,
+        "ChunkStartTimeOffsetMilliseconds": 19966,
+        "DurationMilliseconds": 20003,
+        "ChunkSize": 78562,
+        "FileRelativePath": "/filmChunk2",
+        "ChunkType": 2
+      },
+      {
+        "Index": 3,
+        "ChunkStartTimeOffsetMilliseconds": 39970,
+        "DurationMilliseconds": 20006,
+        "ChunkSize": 79438,
+        "FileRelativePath": "/filmChunk3",
+        "ChunkType": 2
+      },
+      {
+        "Index": 4,
+        "ChunkStartTimeOffsetMilliseconds": 59977,
+        "DurationMilliseconds": 20008,
+        "ChunkSize": 74074,
+        "FileRelativePath": "/filmChunk4",
+        "ChunkType": 2
+      },
+      {
+        "Index": 5,
+        "ChunkStartTimeOffsetMilliseconds": 79986,
+        "DurationMilliseconds": 20003,
+        "ChunkSize": 76401,
+        "FileRelativePath": "/filmChunk5",
+        "ChunkType": 2
+      },
+      {
+        "Index": 6,
+        "ChunkStartTimeOffsetMilliseconds": 99989,
+        "DurationMilliseconds": 9219,
+        "ChunkSize": 34855,
+        "FileRelativePath": "/filmChunk6",
+        "ChunkType": 2
+      },
+      {
+        "Index": 7,
+        "ChunkStartTimeOffsetMilliseconds": 109208,
+        "DurationMilliseconds": 1,
+        "ChunkSize": 3032,
+        "FileRelativePath": "/filmChunk7",
+        "ChunkType": 3
+      }
+    ],
+    "HasGameEnded": true,
+    "ManifestRefreshSeconds": 30,
+    "MatchId": "3f5b80c8-c5f2-4f3f-a3b9-ff286100866e",
+    "FilmMajorVersion": 41
+  },
+  "BlobStoragePathPrefix": "https://blobs-infiniteugc.svc.halowaypoint.com/ugcstorage/film/80034406-b0c0-4e3e-8ece-a23461313e62/64e46d1b-d33d-4199-a2c9-8ba96ab70e94/",
+  "AssetId": "80034406-b0c0-4e3e-8ece-a23461313e62"
+}

@@ -113,6 +113,28 @@ function filmsPlugin(): Plugin {
           return;
         }
 
+        // /api/films/:guid/objects.json
+        const objMatch = req.url?.match(/^\/api\/films\/([a-f0-9-]+)\/objects\.json$/);
+        if (objMatch) {
+          const [, guid] = objMatch;
+          const objPath = join(filmsDir, guid, 'objects.json');
+          if (existsSync(objPath)) {
+            const data = readFileSync(objPath, 'utf-8');
+            res.setHeader('Content-Type', 'application/json');
+            res.end(data);
+            return;
+          }
+          res.statusCode = 404;
+          res.end('objects.json not found');
+          return;
+        }
+
+        // Rewrite /aim to /aim.html for SPA-style navigation
+        // Must match exactly "/aim" or "/aim?..." — not "/aim-main.ts" etc.
+        if (req.url === '/aim' || req.url?.startsWith('/aim?')) {
+          req.url = '/aim.html' + (req.url.includes('?') ? req.url.substring(req.url.indexOf('?')) : '');
+        }
+
         next();
       });
     },
@@ -124,6 +146,12 @@ export default defineConfig({
   build: {
     outDir: '../../dist/viewer',
     emptyOutDir: true,
+    rollupOptions: {
+      input: {
+        main: resolve('src/viewer/index.html'),
+        aim: resolve('src/viewer/aim.html'),
+      },
+    },
   },
   plugins: [filmsPlugin()],
 });
