@@ -172,6 +172,69 @@ Each film directory contains the decompressed film chunks, match/film metadata, 
 4. **Motion extraction** - Scans film chunk binaries for frame markers (`A0 7B 42`), auto-detects the position encoding variant per player, and accumulates coordinate deltas into movement paths. Supports multiple encoding formats across different maps.
 5. **SVG generation** - Scales motion data to world coordinates using map bounds, anchors paths to detected spawn positions, and renders per-player movement trails with map object overlays.
 
+## Weapon fire events
+
+> [!NOTE]
+> Fire event decoding is not yet implemented in FilmShell. The findings below document the binary encoding for future implementation. Initial analysis and weapon ID discovery by [Andy Curtis](https://github.com/acurtis166) — see the full [discussion thread](https://github.com/dend/blog-comments/issues/5).
+
+Weapon fire events are encoded in the film chunk bit stream at a **4-bit offset** from byte boundaries. Each fire event contains the weapon ID, weapon slot, a rolling fire counter, and an aim vector using [octahedral encoding](https://stackoverflow.com/a/74745666).
+
+### Fire event structure
+
+All fields are bit-packed at a 4-bit shift:
+
+| Offset | Size | Field | Notes |
+|---|---|---|---|
+| 0 | 1 byte | Lead byte | `0x0d` for fire events |
+| 1 | 1 byte | Player/constant | `0x26` — bit-packed with player index |
+| 2 | 1 byte | Constant | `0x00` |
+| 3 | 1 byte | Constant | `0x40` (low 2 bits may vary) |
+| 4 | 1 byte | Fire counter | Increments by 4 per shot, wraps at 256 |
+| 5 | 1 byte | Weapon slot | `0x01` = primary, `0x03` = secondary |
+| 6 | 8 bytes | Weapon ID | See table below |
+| 14 | 1 byte | Aim octant | 0–7, selects face in octahedral projection |
+| 15 | 2 bytes | Aim vector | uint16 encoding position within octant face |
+| 17 | 2+ bytes | Aim data | Additional aim vector components |
+
+Because of the 4-bit shift, weapon IDs don't appear as literal byte sequences in the file. To search, compute the shifted 7-byte pattern:
+
+```
+pattern[k] = ((weaponId[k] << 4) | (weaponId[k+1] >> 4)) & 0xFF,  for k = 0..6
+```
+
+### Known weapon IDs
+
+Discovered by [Andy Curtis](https://github.com/acurtis166). Weapon variants (e.g., S7 Flexfire) share the same ID as the base weapon. Most IDs share the `42 c9 67 9f` suffix.
+
+| Weapon | ID |
+|---|---|
+| Bandit Evo | `6a cd c4 4d 42 c9 67 9f` |
+| BR75 | `2b 18 24 d5 42 c9 67 9f` |
+| Cindershot | `23 04 47 b1 42 c9 67 9f` |
+| CQS48 Bulldog | `b6 19 d8 4a 42 c9 67 9f` |
+| Disruptor | `84 bd 29 ed 42 c9 67 9f` |
+| Heatwave | `2a c9 c2 ff 42 c9 67 9f` |
+| M392 Bandit | `2f b2 1c 87 42 c9 67 9f` |
+| M41 SPNKr | `71 ab 0a 2c 42 c9 67 9f` |
+| MA40 AR | `48 c1 9d 2d 42 c9 67 9f` |
+| MA5K Avenger | `f5 c3 35 df e7 23 2c 0b` |
+| Mangler | `80 97 7b a5 42 c9 67 9f` |
+| Mk51 Sidekick | `f4 08 19 0f 42 c9 67 9f` |
+| MLRS-2 Hydra | `76 7d b9 6d 42 c9 67 9f` |
+| Needler | `b5 33 95 7e 42 c9 67 9f` |
+| Plasma Pistol | `c3 54 29 46 42 c9 67 9f` |
+| Pulse Carbine | `30 48 4e a6 42 c9 67 9f` |
+| Ravager | `c3 0d 87 c7 42 c9 67 9f` |
+| S7 Sniper | `0a 19 92 bc 42 c9 67 9f` |
+| Shock Rifle | `93 87 a8 b9 42 c9 67 9f` |
+| Skewer | `0d 20 c4 69 42 c9 67 9f` |
+| Stalker Rifle | `da f1 93 c7 42 c9 67 9f` |
+| VK78 Commando | `fd 98 55 4c 42 c9 67 9f` |
+| Vestige Carbine | `3e 07 02 17 42 c9 67 9f` |
+
+> [!NOTE]
+> Andy's research indicates that automatic weapons (like the MA40 AR) may have some shots dropped in the film sampling — the fire counter can skip values, and the shot count may not match the ammo consumed. Semi-automatic and single-shot weapons appear to record all fire events consistently.
+
 ## Binary viewer
 
 The repository includes a browser-based binary viewer for inspecting raw film data. It is intended as a reverse-engineering tool to help map frame fields and discover new patterns.
@@ -199,4 +262,4 @@ The viewer provides:
 - MVAR format insights from [soupstream/InfiniteVariantTool](https://github.com/soupstream/InfiniteVariantTool)
 - General tag details from [Gamergotten/Infinite-runtime-tagviewer](https://github.com/Gamergotten/Infinite-runtime-tagviewer)
 - Halo Infinite asset parsing reference from [Surasia/libpyinfinite](https://github.com/Surasia/libpyinfinite)
-- [Andy Curtis](https://github.com/acurtis166) for [film file exploration](https://github.com/dend/blog-comments/issues/5)
+- [Andy Curtis](https://github.com/acurtis166) for [film file exploration](https://github.com/dend/blog-comments/issues/5), weapon fire event decoding, weapon ID discovery, and octahedral aim vector analysis

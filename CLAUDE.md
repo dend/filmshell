@@ -77,6 +77,48 @@ npm start -- --match-id 53a98da9-718d-4374-b739-b0ee2e7033ba
 
 Types: 2 PvP (2 humans), 2 PvE (human + bot — currently broken), 2 Solo (1 human).
 
+## Weapon fire events
+
+Weapon fire events are encoded in the film chunk bit stream at a **4-bit offset** (not byte-aligned). Discovery and initial decoding by [Andy Curtis](https://github.com/acurtis166) ([source](https://github.com/dend/blog-comments/issues/5#issuecomment-3875288507)).
+
+**Fire event structure** (all fields bit-packed at 4-bit shift):
+
+```
+0d  26  00  40  [ctr]  [slot]  [----weapon ID (8 bytes)----]  [oct]  [u16]  [aim...]
+ |   |   |   |    |      |                                      |      |
+lead |  0x00 |  fire    slot                                  octant  aim vector
+byte |      mostly counter  1=primary                         (0-7)   uint16
+     |      0x40   (+4/shot) 3=secondary
+   0x26    (low 2 bits vary)
+```
+
+- **Lead byte:** `0x0d` for fire events.
+- **Player index:** Bit-packed into byte at offset 1 (`0x26` for player index 0).
+- **Fire counter:** Increments by 4 per shot, wraps at 256.
+- **Weapon slot:** `0x01` = primary, `0x03` = secondary.
+- **Weapon ID:** 8-byte identifier. Last 4 bytes are usually `42 c9 67 9f` (common namespace).
+- **Aim vector:** Octahedral 3D-to-2D encoding — octant byte (0-7) selects a face, uint16 encodes position within the face. See Andy's [analysis](https://github.com/dend/blog-comments/issues/5#issuecomment-3875288507) for sphere projection details.
+
+**Searching for weapon IDs:** Because of the 4-bit shift, weapon IDs don't appear as raw byte sequences. To search, compute shifted patterns: `pattern[k] = ((id[k] << 4) | (id[k+1] >> 4)) & 0xFF` for k=0..6 (7-byte pattern).
+
+**Known weapon IDs** (from Andy Curtis, [updated list](https://github.com/dend/blog-comments/issues/5#issuecomment-3882279646)):
+
+| Weapon | ID |
+|---|---|
+| MA40 AR | `48 c1 9d 2d 42 c9 67 9f` |
+| Mk51 Sidekick | `f4 08 19 0f 42 c9 67 9f` |
+| BR75 | `2b 18 24 d5 42 c9 67 9f` |
+| M392 Bandit | `2f b2 1c 87 42 c9 67 9f` |
+| VK78 Commando | `fd 98 55 4c 42 c9 67 9f` |
+| S7 Sniper | `0a 19 92 bc 42 c9 67 9f` |
+| CQS48 Bulldog | `b6 19 d8 4a 42 c9 67 9f` |
+| M41 SPNKr | `71 ab 0a 2c 42 c9 67 9f` |
+| Needler | `b5 33 95 7e 42 c9 67 9f` |
+
+See full list in the [comment thread](https://github.com/dend/blog-comments/issues/5#issuecomment-3882279646) (25 weapons documented).
+
+**Validated in film `b49f075b`:** 124 AR fire events (slot 1) in chunks 1-2, 47 Sidekick fire events (slot 3) in chunks 3-4, matching the test scenario (AR at south spawn, Sidekick at north spawn).
+
 ## Things to know
 
 - `config.json` and `tokens.bin` are gitignored and contain secrets — never commit them.
