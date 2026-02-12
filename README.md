@@ -143,7 +143,7 @@ The most reliable way to discover new object IDs is to create custom maps in For
 
 ## Reference films
 
-The repository includes seven pre-downloaded films in `films/` that can be used to validate the implementation without needing API access. All matches were played on [Aquarius](https://www.halowaypoint.com/halo-infinite/ugc/maps/33c0766c-ef15-48f8-b298-34aba5bff3b4). The first six have the human player making a full loop of the map; the seventh is a solo combat test. Re-process any of them with:
+The repository includes eight pre-downloaded films in `films/` that can be used to validate the implementation without needing API access. All matches were played on [Aquarius](https://www.halowaypoint.com/halo-infinite/ugc/maps/33c0766c-ef15-48f8-b298-34aba5bff3b4). The first six have the human player making a full loop of the map; the seventh is a solo combat test; the eighth is a PvE bot fight. Re-process any of them with:
 
 ```sh
 npm start -- --match-id <match-guid>
@@ -158,6 +158,7 @@ npm start -- --match-id <match-guid>
 | `152dd30f-a99b-4e51-addb-7679c566a725` | 1 human | Solo | Full loop |
 | `2cf8d130-4363-48b1-b7b8-62b5a6e01454` | 1 human | Solo | Full loop |
 | `b49f075b-f82b-4ad6-940b-fc31f53756bb` | 1 human | Solo | Half-circle, MA40 AR fire at south spawn, MK50 Sidekick fire at north spawn |
+| `3f5b80c8-c5f2-4f3f-a3b9-ff286100866e` | 1 human + 1 bot | PvE | Bot fight, human engages bot in combat |
 
 Each film directory contains the decompressed film chunks, match/film metadata, cached map objects, the parsed MVAR document, and the generated SVG path visualization.
 
